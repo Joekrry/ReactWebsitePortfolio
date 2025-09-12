@@ -63,7 +63,7 @@ const Projects = () =>
                   <img src={project.image} alt={project.title} />
                   <div className="project-overlay">
                     <div className="project-actions">
-                      <a href={project.githubUrl} className="action-btn github-btn">
+                      <a href={project.githubUrl} className="action-btn github-btn" target="_blank" rel="noopener noreferrer">
                         <span>GitHub</span>
                       </a>
                     </div>
