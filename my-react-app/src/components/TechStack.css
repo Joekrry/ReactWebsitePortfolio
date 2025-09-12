@@ -1,0 +1,294 @@
+.tech-stack 
+{
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #faf8f6 0%, #f5f5f4 100%);
+  position: relative;
+}
+
+.tech-container 
+{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-header 
+{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title 
+{
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #1c1917, #44403c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle 
+{
+  font-size: 1.2rem;
+  color: #57534e;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.tech-categories 
+{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.category-btn 
+{
+  background: transparent;
+  border: 2px solid rgba(28, 25, 23, 0.2);
+  color: #44403c;
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.category-btn::before 
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #1c1917, #44403c);
+  transition: left 0.3s ease;
+  z-index: -1;
+}
+
+.category-btn:hover::before,
+.category-btn.active::before 
+{
+  left: 0;
+}
+
+.category-btn:hover,
+.category-btn.active 
+{
+  color: #faf8f6;
+  border-color: #1c1917;
+  transform: translateY(-2px);
+}
+
+.tech-content 
+{
+  background: #fefefe;
+  border-radius: 20px;
+  padding: 3rem;
+  box-shadow: 0 20px 50px rgba(28, 25, 23, 0.08);
+  border: 1px solid rgba(28, 25, 23, 0.05);
+  margin-bottom: 3rem;
+}
+
+.tech-header 
+{
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.tech-header h3 
+{
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1c1917;
+  margin-bottom: 0.5rem;
+}
+
+.tech-header p 
+{
+  color: #57534e;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.tech-grid 
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 1.5rem;
+}
+
+.tech-card 
+{
+  background: #faf8f6;
+  border-radius: 15px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(28, 25, 23, 0.05);
+  animation: slideInUp 0.6s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.tech-card:hover 
+{
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(28, 25, 23, 0.1);
+  border-color: rgba(28, 25, 23, 0.1);
+}
+
+.tech-info 
+{
+  margin-bottom: 1.5rem;
+}
+
+.tech-info h4 
+{
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1c1917;
+  margin-bottom: 0.5rem;
+}
+
+.tech-info p 
+{
+  color: #57534e;
+  line-height: 1.5;
+  font-size: 0.95rem;
+}
+
+.tech-summary 
+{
+  background: #1c1917;
+  border-radius: 20px;
+  padding: 3rem;
+  color: #faf8f6;
+}
+
+.summary-stats 
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.stat-item 
+{
+  text-align: center;
+}
+
+.stat-number 
+{
+  font-size: 3rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #faf8f6, #e7e5e4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label 
+{
+  color: #a8a29e;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+@keyframes slideInUp 
+{
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) 
+{
+  .tech-stack 
+  {
+    padding: 4rem 0;
+  }
+
+  .tech-container 
+  {
+    padding: 0 1rem;
+  }
+
+  .section-title 
+  {
+    font-size: 2.5rem;
+  }
+
+  .tech-categories 
+  {
+    gap: 0.5rem;
+  }
+
+  .category-btn 
+  {
+    padding: 0.75rem 1.25rem;
+    font-size: 0.9rem;
+  }
+
+  .tech-content 
+  {
+    padding: 2rem;
+  }
+
+  .tech-grid 
+  {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .tech-card 
+  {
+    padding: 1.5rem;
+  }
+
+  .tech-summary 
+  {
+    padding: 2rem;
+  }
+
+  .summary-stats 
+  {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .stat-number 
+  {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) 
+{
+  .section-title 
+  {
+    font-size: 2rem;
+  }
+
+  .tech-header h3 
+  {
+    font-size: 1.5rem;
+  }
+
+  .summary-stats 
+  {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
