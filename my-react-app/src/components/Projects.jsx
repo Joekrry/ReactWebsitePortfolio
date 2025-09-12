@@ -24,7 +24,7 @@ const Projects = () =>
       technologies: ["C#", "Unity"],
       image: GeoWars,
       demoUrl: "#",
-      githubUrl: "https://github.com/Joekrry/PortfolioWebsite"
+      githubUrl: "#"
     },
 
         {
@@ -35,7 +35,7 @@ const Projects = () =>
       technologies: ["HTML", "CSS", "JavaScript"],
       image: MyFirstWebsite,
       demoUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/Joekrry/PortfolioWebsite"
     },
 
   ];
