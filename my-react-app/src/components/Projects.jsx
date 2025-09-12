@@ -1,6 +1,7 @@
 import './Projects.css'; 
 import PS2EMULATOR from '../assets/PS2EMULATOR.jpg';
 import GeoWars from '../assets/GeometryWars.jpg';
+import MyFirstWebsite from '../assets/MyFirstWebsite.png';
 
 const Projects = () => 
     {
@@ -23,8 +24,20 @@ const Projects = () =>
       technologies: ["C#", "Unity"],
       image: GeoWars,
       demoUrl: "#",
+      githubUrl: "https://github.com/Joekrry/PortfolioWebsite"
+    },
+
+        {
+      id: 3,
+      title: "First Portfolio Website",
+      category: "front-end",
+      description: "A modern remake of the classic Geometry Wars game with gameplay and graphics optimised for me personally.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      image: MyFirstWebsite,
+      demoUrl: "#",
       githubUrl: "#"
     },
+
   ];
 
   return (
