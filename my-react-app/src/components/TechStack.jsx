@@ -17,21 +17,21 @@ const TechStack = () =>
         { name: "JavaScript", description: "ES6+ modern JavaScript development" },
         { name: "React", description: "Component-based UI library for building web applications" },
         { name: "Anime.js", description: "JavaScript animation library" },
+        { name: "Tailwind CSS", description: "Utility-first CSS framework" },
       ]
     },
     backend: 
     {
       title: "Backend Development",
-      description: "Building robust server-side applications and APIs",
+      description: "Building server-side applications and APIs",
       technologies: [
         { name: "C#", description: "Server-side programming language" },
         { name: ".NET Core", description: "Cross-platform framework for building applications" },
+        { name: "Python", description: "Server-side programming language" },
         { name: "Node.js", description: "JavaScript runtime for server-side development" },
         { name: "PostgreSQL", description: "Relational database management system" },
-        { name: "RESTful API", description: "Web services design and implementation" },
-        { name: "Python", description: "Server-side programming language" }
-
-
+        { name: "MongoDB", description: "NoSQL database for flexible data storage" },
+        { name: "RESTful API's", description: "Information exchange interface" },
       ]
     },
     tools: 
@@ -44,6 +44,7 @@ const TechStack = () =>
         { name: "Figma", description: "UI/UX design and prototyping" },
         { name: "Postman", description: "API testing and development" },
         { name: "Kubernetes", description: "Container orchestration for microservices" },
+        { name: "Unity", description: "Game development platform" },
       ]
     }
   };
