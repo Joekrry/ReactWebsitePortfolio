@@ -11,23 +11,6 @@ const Footer = () =>
     { name: 'Instagram', url: 'https://www.instagram.com/Joekrry/', icon: 'Instagram' },
   ];
 
-  const quickLinks = 
-  [
-    { name: 'About', href: '#about' },
-    { name: 'Tech Stack', href: '#tech-stack' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'History', href: '#history' },
-    { name: 'Blog', href: '#blog' }
-  ];
-
-  const scrollToSection = (href) => 
-    {
-    const element = document.querySelector(href);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const scrollToTop = () => 
     {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -57,37 +40,6 @@ const Footer = () =>
               ))}
             </div>
           </div>
-
-          <div className="footer-section">
-            <h4>Quick Links</h4>
-            <ul className="footer-links">
-              {quickLinks.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToSection(link.href);
-                    }}
-                  >
-                    {link.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          <div className="footer-section">
-            <h4>Expertise</h4>
-            <ul className="footer-links">
-              <li><a href="#">C# & .NET App Development</a></li>
-              <li><a href="#">Back-End Development</a></li>
-              <li><a href="#">Front-End Development</a></li>
-              <li><a href="#">System Analysis & Design</a></li>
-              <li><a href="#">Research Skills & Data Entry</a></li>
-            </ul>
-          </div>
-
           <div className="footer-section">
             <h4>Get in Touch</h4>
             <div className="contact-info">

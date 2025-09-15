@@ -56,14 +56,15 @@ const About = () =>
           <div className="about-story">
             <h3>My Journey</h3>
             <p>
-              A fresh graduate with a Bachelors degree, with honours, in Law with Business, Now pursuing a Master's degree in Software Engineering
+              A fresh graduate in possession of a Bachelors degree, with honours, in Law with Business, Now pursuing a Master's degree in Software Engineering
                 to transition into a career in software development. I realised half way through my bachelors that a career in law was not for me,
                 I have always been interested in both software and hardware but unfortunately never pursued it academically.
             </p>
             <p>
               In October 2023, I started teaching myself front-end web development using HTML, CSS and JavaScript and becoming familiar with frameworks and tools such as
-              React, Git, Node.js and figma for UI/UX planing. As I was enrolled in my bachelors degree I did not spend as much time on learning these skills as I would have liked.
-              However, Now that I have graduated and am on the road to starting my masters degree in Software Engineering, I can spend infinitely more time learning and practising these skills.
+              React, Git, and figma for UI/UX planing. As I was enrolled in my bachelors degree I did not spend as much time on learning these skills as I would have liked.
+              However, Now that I have graduated and have started my masters degree in Software Engineering, I can spend infinitely more time learning and practising these skills,
+              I am extremely excited to have valuable academic guidance to structure my learning and provide an insightful network.
             </p>
           </div>
 

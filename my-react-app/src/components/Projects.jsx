@@ -7,23 +7,21 @@ const Projects = () =>
     {
   const projects = [
     {
-      id: 2,
+      id: 1,
       title: "PS2 Emulator Framework",
       category: "full-stack",
       description: "A PS2 Emulator Framework built in C# with basic hardware emulation, a custom UI, Long term Project as I lack the sufficient knowledge for in depth hardware emulation.",
       technologies: ["C#", ".NET",],
       image: PS2EMULATOR,
-      demoUrl: "#",
       githubUrl: "#"
     },
     {
-      id: 3,
+      id: 2,
       title: "Geometry Wars Remastered",
       category: "full-stack",
-      description: "A modern remake of the classic Geometry Wars game with gameplay and graphics optimised for me personally.",
-      technologies: ["C#", "Unity"],
+      description: "A personalised remake of the classic Geometry Wars game. Learning the basics of C# syntax.",
+      technologies: ["C#", "Xna Framework", "Monogame"],
       image: GeoWars,
-      demoUrl: "#",
       githubUrl: "#"
     },
 
@@ -32,9 +30,8 @@ const Projects = () =>
       title: "First Portfolio Website",
       category: "front-end",
       description: "A modern remake of the classic Geometry Wars game with gameplay and graphics optimised for me personally.",
-      technologies: ["HTML", "CSS", "JavaScript"],
+      technologies: ["HTML", "CSS", "JavaScript", "React"],
       image: MyFirstWebsite,
-      demoUrl: "#",
       githubUrl: "https://github.com/Joekrry/PortfolioWebsite"
     },
 

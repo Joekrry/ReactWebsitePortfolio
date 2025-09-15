@@ -39,12 +39,15 @@ const Hero = () => {
                   <span className="code-keyword">var</span> <span className="code-variable">developer</span> = {'new'} <br></br>{'{'}
                 </div>
                 <div className="code-line code-indent">
-                  <span className="code-property">name = </span> <span className="code-string">'Joseph Kerry'</span>,
+                  <span className="code-property">name = </span> <span className="code-string">"Joseph Kerry"</span>,
                 </div>
                 <div className="code-line code-indent">
-                  <span className="code-property">skills = </span><span className="code-variable">new</span> [] <span className="code-string">'C#'</span>, <span className="code-string">'.NET'</span>, <span className="code-string">'Back-End'</span>
+                  <span className="code-property">Languages = </span><span className="code-keyword">new</span>[] {'{'}<span className="code-variable"></span><span className="code-string">"C#"</span>, <span className="code-string">"Js"</span>, <span className="code-string">"Python"</span>{'}'}
                 </div>
-                <div className="code-line">{'}'}</div>
+                <div className="code-line code-indent">
+                  <span className="code-property">YearsOfExperience = </span><span className="code-variable">2</span>;
+                </div>
+                <div className="code-line">{'};'}</div>
               </div>
             </div>
           </div>

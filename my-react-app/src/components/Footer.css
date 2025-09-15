@@ -37,6 +37,7 @@
 {
   margin-bottom: 1.5rem;
   color: #faf8f6;
+  
 }
 
 .footer-logo 
@@ -54,6 +55,7 @@
   font-size: 1.1rem;
   font-weight: 700;
   position: relative;
+  left: 35rem;
 }
 
 .footer-section h4::after 
@@ -84,8 +86,8 @@
 
 .social-link 
 {
-  width: 45px;
-  height: 45px;
+  width: 70px;
+  height: 70px;
   background: rgba(250, 248, 246, 0.1);
   border: 1px solid rgba(250, 248, 246, 0.2);
   border-radius: 50%;
@@ -163,6 +165,8 @@
   line-height: 1.6;
   margin-bottom: 1rem;
   font-size: 0.95rem;
+  left: 35rem;
+  position: relative;
 }
 
 .contact-email 
@@ -172,6 +176,7 @@
   font-weight: 600;
   transition: all 0.3s ease;
   position: relative;
+  left: 35rem;
 }
 
 .contact-email::after 
@@ -203,6 +208,8 @@
   font-weight: 600;
   font-size: 0.9rem;
   width: 100%;
+  left: 35rem;
+  position: relative;
 }
 
 .back-to-top:hover 
