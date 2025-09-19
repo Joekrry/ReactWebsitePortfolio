@@ -38,7 +38,7 @@ const Navigation = () =>
     <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-logo">
-          <span className="logo-text">React Portfolio</span>
+          <span className="logo-text">My Portfolio!</span>
         </div>
         
         <div className="work-status">
