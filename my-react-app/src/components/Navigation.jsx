@@ -22,7 +22,6 @@ const Navigation = () =>
     { name: 'Tech Stack', href: '#tech-stack' },
     { name: 'Projects', href: '#projects' },
     { name: 'History', href: '#history' },
-    { name: 'Blog', href: '#blog' }
   ];
 
   const scrollToSection = (href) => 
