@@ -62,7 +62,7 @@ const About = () =>
             </p>
             <p>
               In October 2023, I started teaching myself front-end web development using HTML, CSS and JavaScript and becoming familiar with frameworks and tools such as
-              React, Git, and figma for UI/UX planing. As I was enrolled in my bachelors degree I did not spend as much time on learning these skills as I would have liked.
+              React, Git, and figma for UI/UX planning. As I was enrolled in my bachelors degree I did not spend as much time on learning these skills as I would have liked.
               However, Now that I have graduated and have started my masters degree in Software Engineering, I can spend infinitely more time learning and practising these skills,
               I am extremely excited to have valuable academic guidance to structure my learning and provide an insightful network.
             </p>
