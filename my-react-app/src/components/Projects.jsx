@@ -1,13 +1,14 @@
 import './Projects.css'; 
 import GeoWars from '../assets/GeometryWars.jpg';
 import MyFirstWebsite from '../assets/MyFirstWebsite.png';
+import SoftwareProgrammingImage from '../assets/SoftwareProgrammingImage.jpg';
 
 const Projects = () => 
     {
   const projects = [
     {
       id: 2,
-      title: "Geometry Wars Remastered",
+      title: "Geometry Wars 2D Remake in Xna Framework to learn a more practical demonstration of C#.",
       category: "full-stack",
       description: "A personalised remake of the classic Geometry Wars game. Learning the basics of C# syntax.",
       technologies: ["C#", "Xna Framework", "Monogame"],
@@ -16,12 +17,21 @@ const Projects = () =>
     },
     {
       id: 3,
-      title: "First Portfolio Website",
+      title: "First Portfolio Website when I started learning web development.",
       category: "front-end",
       description: "A modern remake of the classic Geometry Wars game with gameplay and graphics optimised for me personally.",
       technologies: ["HTML", "CSS", "JavaScript", "React"],
       image: MyFirstWebsite,
       githubUrl: "https://github.com/Joekrry/PortfolioWebsite"
+    },
+    {
+      id: 4,
+      title: "Basic mini Projects from my 'Software Programming' Module.",
+      category: "front-end",
+      description: "Mini projects from my 'Software Programming' module at university. These projects were created using C# and focused on various programming concepts and techniques.",
+      technologies: ["C#"],
+      image: SoftwareProgrammingImage,
+      githubUrl: "https://olympus.ntu.ac.uk/N1077433?tab=repositories"
     },
 
   ];
