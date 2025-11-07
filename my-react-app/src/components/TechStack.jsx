@@ -25,13 +25,15 @@ const TechStack = () =>
       title: "Backend Development",
       description: "Building server-side applications and APIs",
       technologies: [
-        { name: "C#", description: "Server-side programming language" },
+        { name: "C#", description: "General purpose programming language" },
         { name: ".NET Core", description: "Cross-platform framework for building applications" },
-        { name: "Python", description: "Server-side programming language" },
+        { name: "C", description: "Server-side programming language" },
+        { name: "Java", description: "General purpose programming language" },
         { name: "Node.js", description: "JavaScript runtime for server-side development" },
-        { name: "PostgreSQL", description: "Relational database management system" },
+        { name: "JavaScipt", description: "ES6+ modern JavaScript development" },
+        /*{ name: "PostgreSQL", description: "Relational database management system" },
         { name: "MongoDB", description: "NoSQL database for flexible data storage" },
-        { name: "RESTful API's", description: "Information exchange interface" },
+        { name: "RESTful API's", description: "Information exchange interface" },*/
       ]
     },
     tools: 
@@ -43,8 +45,7 @@ const TechStack = () =>
         { name: "VS Code", description: "Primary code editor with extensions" },
         { name: "Figma", description: "UI/UX design and prototyping" },
         { name: "Postman", description: "API testing and development" },
-        { name: "Kubernetes", description: "Container orchestration for microservices" },
-        { name: "Unity", description: "Game development platform" },
+        { name: "Kubernetes", description: "Container orchestration for microservices" }
       ]
     }
   };
@@ -98,7 +99,7 @@ const TechStack = () =>
               <div className="stat-label">Years Learning</div>
             </div>
             <div className="stat-item">
-              <div className="stat-number">16</div>
+              <div className="stat-number">17</div>
               <div className="stat-label">Technologies</div>
             </div>
           </div>

@@ -56,16 +56,21 @@ const About = () =>
           <div className="about-story">
             <h3>My Journey</h3>
             <p>
-              A fresh graduate in possession of a Bachelors degree, with honours, in Law with Business, Now pursuing a Master's degree in Software Engineering
-                to transition into a career in software development. I realised half way through my bachelors that a career in law was not for me,
-                I have always been interested in both software and hardware but unfortunately never pursued it academically.
+              In October 2023, I started teaching myself front-end web development involving HTML, CSS and JavaScript and becoming familiar with frameworks and tools such as
+              React, Git, and figma for UI/UX planning. I immediately enjoyed the process of building code based projects and learning the intricacies of the theory surrounding code
+              and computer science as a broader subject. However, without formal education and structured learning through an institution, I could not see myself entering into the industry and
+              therefore planned to pursue further education in the field.
             </p>
             <p>
-              In October 2023, I started teaching myself front-end web development using HTML, CSS and JavaScript and becoming familiar with frameworks and tools such as
-              React, Git, and figma for UI/UX planning. As I was enrolled in my bachelors degree I did not spend as much time on learning these skills as I would have liked.
-              However, Now that I have graduated and have started my masters degree in Software Engineering, I can spend infinitely more time learning and practising these skills,
-              I am extremely excited to have valuable academic guidance to structure my learning and provide an insightful network.
+              After completing my Bachelor's degree in Law with Business at Nottingham Trent University in June 2025, I decided to pursue a Master of Science in Software Engineering.
+              This decision was driven by my fixation on technology from a young age, and my desire for objective solutions to problems i would be facing, which i found was not common within law and this made it difficult for me
+              to continue to be motivated to work within that field.
             </p>
+            <p>
+              In preparation for my Masters degree, I have been proactively learning C# and .NET through online courses and practical projects. This self-initiated learning has provided me with a solid foundation in these technologies
+              which can then be built upon during my course.
+            </p>
+
           </div>
 
           <div className="education-modules">
