@@ -57,6 +57,9 @@ const Navigation = () =>
             <a href="https://instagram.com/Joekrry" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
               <i className="fab fa-instagram"></i>
             </a>
+            <a href="/ReactWebsitePortfolio/CV.pdf" target="_blank" rel="noopener noreferrer" className="social-link cv-link" aria-label="Download CV" download>
+              <i className="fas fa-file-download"></i>
+            </a>
           </div>
           
           <div className="work-status">
