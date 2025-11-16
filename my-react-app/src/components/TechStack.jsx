@@ -17,7 +17,6 @@ const TechStack = () =>
         { name: "JavaScript", description: "ES6+ modern JavaScript development" },
         { name: "React", description: "Component-based UI library for building web applications" },
         { name: "Anime.js", description: "JavaScript animation library" },
-        { name: "Tailwind CSS", description: "Utility-first CSS framework" },
       ]
     },
     backend: 
@@ -40,12 +39,12 @@ const TechStack = () =>
     {
       title: "Development Tools",
       description: "Essential tools for efficient development workflow",
-      technologies: [
+      technologies: 
+      [
         { name: "Git", description: "Version control and collaborative development" },
-        { name: "VS Code", description: "Primary code editor with extensions" },
         { name: "Figma", description: "UI/UX design and prototyping" },
         { name: "Postman", description: "API testing and development" },
-        { name: "Kubernetes", description: "Container orchestration for microservices" }
+        { name: "Visual Studio Code", description: "Integrated Development Environment." },
       ]
     }
   };
@@ -89,19 +88,6 @@ const TechStack = () =>
                 </div>
               </div>
             ))}
-          </div>
-        </div>
-
-        <div className="tech-summary">
-          <div className="summary-stats">
-            <div className="stat-item">
-              <div className="stat-number">2+</div>
-              <div className="stat-label">Years Learning</div>
-            </div>
-            <div className="stat-item">
-              <div className="stat-number">17</div>
-              <div className="stat-label">Technologies</div>
-            </div>
           </div>
         </div>
       </div>

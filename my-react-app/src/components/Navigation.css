@@ -22,32 +22,87 @@
 {
   max-width: 1200px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.5rem 2.5rem;
+  position: relative;
+  gap: 2rem;
 }
 
-.nav-logo 
+.nav-left 
 {
-  font-size: 1.5rem;
-  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-self: start;
+}
+
+.nav-center 
+{
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+}
+
+.nav-right 
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  justify-self: end;
+}
+
+.social-links 
+{
+  display: flex;
+  align-items: center;
+  gap: 1sssrem;
+}
+
+.social-link 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: #6b7280;
+  background: transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0.5rem;
+}
+
+.social-link:hover 
+{
   color: #1c1917;
+  background: rgba(28, 25, 23, 0.08);
+  transform: translateY(-2px);
 }
 
-.logo-text 
+.social-link:focus 
 {
-  background: linear-gradient(135deg, #1c1917, #44403c);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  outline: none;
+}
+
+.social-link:active 
+{
+  outline: none;
+}
+
+.social-link i 
+{
+  transition: all 0.3s ease;
 }
 
 .work-status 
 {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 1rem;
 }
 
 .status-indicator 
@@ -88,6 +143,58 @@
   white-space: nowrap;
 }
 
+.back-to-top-btn 
+{
+  background: #ffffff;
+  color: #6b7280;
+  border: 1px solid rgba(28, 25, 23, 0.1);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(28, 25, 23, 0.06);
+  animation: fadeInUp 0.3s ease-out;
+  white-space: nowrap;
+}
+
+.back-to-top-text 
+{
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.back-to-top-btn i 
+{
+  font-size: 14px;
+}
+
+.back-to-top-btn:hover 
+{
+  color: #1c1917;
+  border-color: rgba(28, 25, 23, 0.2);
+  box-shadow: 0 4px 16px rgba(28, 25, 23, 0.12);
+  transform: translateY(-2px);
+  background: #f8f9fa;
+}
+
+.back-to-top-btn:focus 
+{
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(28, 25, 23, 0.2);
+}
+
+.back-to-top-btn:focus-visible 
+{
+  outline: 2px solid #1c1917;
+  outline-offset: 2px;
+}
+
 @keyframes pulse 
 {
   0% {
@@ -113,6 +220,18 @@
   }
 }
 
+@keyframes fadeInUp 
+{
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .nav-links 
 {
   display: flex;
@@ -122,37 +241,23 @@
 
 .nav-link 
 {
-  color: #44403c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  background: transparent;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 500;
-  position: relative;
   transition: all 0.3s ease;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
+  padding: 0.5rem;
+  min-height: 40px;
 }
 
 .nav-link:hover 
 {
   color: #1c1917;
-  background: rgba(28, 25, 23, 0.05);
-}
-
-.nav-link::after 
-{
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 50%;
-  width: 0;
-  height: 2px;
-  background: linear-gradient(135deg, #1c1917, #44403c);
-  transition: all 0.3s ease;
-  transform: translateX(-50%);
-}
-
-.nav-link:hover::after 
-{
-  width: 80%;
+  transform: translateY(-2px);
 }
 
 .mobile-menu-toggle 
@@ -200,11 +305,58 @@
   .nav-container 
   {
     padding: 1rem;
+    grid-template-columns: 1fr auto;
+    gap: 1rem;
+  }
+
+  .nav-left 
+  {
+    gap: 1rem;
+  }
+
+  .nav-center 
+  {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    order: 3;
+  }
+
+  .nav-right 
+  {
+    order: 2;
+  }
+
+  .social-links 
+  {
+    gap: 0.75rem;
+  }
+
+  .social-link 
+  {
+    width: 36px;
+    height: 36px;
+    padding: 0.375rem;
   }
 
   .work-status 
   {
     padding: 0.375rem 0.75rem;
+  }
+
+  .back-to-top-btn 
+  {
+    padding: 0.375rem 0.75rem;
+    font-size: 0.75rem;
+  }
+
+  .back-to-top-text 
+  {
+    font-size: 0.75rem;
+  }
+
+  .back-to-top-btn i 
+  {
+    font-size: 12px;
   }
 
   .status-text 

@@ -19,8 +19,8 @@ const Projects = () =>
       id: 3,
       title: "First Portfolio Website when I started learning web development.",
       category: "front-end",
-      description: "A modern remake of the classic Geometry Wars game with gameplay and graphics optimised for me personally.",
-      technologies: ["HTML", "CSS", "JavaScript", "React"],
+      description: "Learned the basics of HTML, CSS, JavaScript and React by creating my first portfolio website to showcase my projects and skills.",
+      technologies: ["HTML", "CSS", "JavaScript"],
       image: MyFirstWebsite,
       githubUrl: "https://github.com/Joekrry/PortfolioWebsite"
     },

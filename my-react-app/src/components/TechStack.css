@@ -42,50 +42,66 @@
 {
   display: flex;
   justify-content: center;
-  gap: 1rem;
+  align-items: center;
+  gap: 2rem;
   margin-bottom: 3rem;
   flex-wrap: wrap;
+  padding: 0;
 }
 
 .category-btn 
 {
-  background: transparent;
-  border: 2px solid rgba(28, 25, 23, 0.2);
-  color: #44403c;
-  padding: 1rem 1.5rem;
-  border-radius: 50px;
-  font-weight: 600;
+  background: #ffffff;
+  border: 1px solid rgba(28, 25, 23, 0.1);
+  color: #6b7280;
+  padding: 0.875rem 1.75rem;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 0.875rem;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
   position: relative;
-  overflow: hidden;
+  white-space: nowrap;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(28, 25, 23, 0.06);
 }
 
 .category-btn::before 
 {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #1c1917, #44403c);
-  transition: left 0.3s ease;
-  z-index: -1;
-}
-
-.category-btn:hover::before,
-.category-btn.active::before 
-{
-  left: 0;
+  display: none;
 }
 
 .category-btn:hover,
 .category-btn.active 
 {
-  color: #faf8f6;
-  border-color: #1c1917;
+  color: #1c1917;
+  border-color: rgba(28, 25, 23, 0.2);
+  box-shadow: 0 4px 16px rgba(28, 25, 23, 0.12);
   transform: translateY(-2px);
+}
+
+.category-btn.active 
+{
+  color: #1c1917;
+  font-weight: 600;
+  background: #f8f9fa;
+  border-color: rgba(28, 25, 23, 0.15);
+}
+
+.category-btn:focus 
+{
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(28, 25, 23, 0.2);
+}
+
+.category-btn:focus-visible 
+{
+  outline: 2px solid #1c1917;
+  outline-offset: 2px;
 }
 
 .tech-content 
@@ -232,13 +248,18 @@
 
   .tech-categories 
   {
-    gap: 0.5rem;
+    gap: 1.25rem;
+    padding: 0 1rem;
+    margin-bottom: 3rem;
   }
 
   .category-btn 
   {
-    padding: 0.75rem 1.25rem;
-    font-size: 0.9rem;
+    padding: 0.75rem 1.5rem;
+    font-size: 0.8rem;
+    min-height: 40px;
+    flex: 0 0 auto;
+    min-width: 100px;
   }
 
   .tech-content 
@@ -284,6 +305,23 @@
   .tech-header h3 
   {
     font-size: 1.5rem;
+  }
+
+  .tech-categories 
+  {
+    gap: 1rem;
+    padding: 0 0.5rem;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+
+  .category-btn 
+  {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.75rem;
+    flex: 0 0 auto;
+    min-width: 80px;
   }
 
   .summary-stats 
