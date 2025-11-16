@@ -22,7 +22,7 @@ const Navigation = () =>
   const navItems = 
   [
     { name: 'About', href: '#about' },
-    { name: 'Tech Stack', href: '#tech-stack' },
+    { name: 'Tech', href: '#tech-stack' },
     { name: 'Projects', href: '#projects' },
     { name: 'History', href: '#history' },
   ];

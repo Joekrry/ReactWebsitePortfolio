@@ -11,7 +11,7 @@ const Hero = () => {
             <span className="hero-subtitle">West Bridgford, Nottingham, England</span>
           </h1>
           <p className="hero-description">
-            Bachelor of Law with Honours Graduate, Student Master of Science in Software Engineering with a focus on C# and .NET application development.
+            MSc Software Engineering student, C# focused. hardworking, committed, just trying to do my best!
           </p>
           <div className="hero-buttons">
             <button 
