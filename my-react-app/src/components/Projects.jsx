@@ -16,15 +16,6 @@ const Projects = () =>
       githubUrl: "https://github.com/Joekrry/Geometry-Wars-2D-Remake-in-Xna"
     },
     {
-      id: 3,
-      title: "First Portfolio Website when I started learning web development.",
-      category: "front-end",
-      description: "Learned the basics of HTML, CSS, JavaScript and React by creating my first portfolio website to showcase my projects and skills.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      image: MyFirstWebsite,
-      githubUrl: "https://github.com/Joekrry/PortfolioWebsite"
-    },
-    {
       id: 4,
       title: "Basic mini Projects from my 'Software Programming' Module.",
       category: "front-end",
