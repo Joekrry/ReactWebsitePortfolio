@@ -140,6 +140,7 @@
   border: 1px solid rgba(28, 25, 23, 0.05);
   transition: all 0.3s ease;
   position: relative;
+  z-index: 1;
 }
 
 .timeline-item:nth-child(even) .timeline-content::before 
@@ -307,7 +308,7 @@
   .timeline-marker 
   {
     left: 30px !important;
-    transform: none !important;
+    transform: translateX(-50%) !important;
   }
 
   .timeline-content 
