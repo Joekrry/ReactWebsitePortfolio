@@ -14,8 +14,8 @@ function App()
       <Navigation />
       <Hero />
       <Projects />
-      <About />
       <TechStack />
+      <About />
       <History />
       <Footer />
     </div>
