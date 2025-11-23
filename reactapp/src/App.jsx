@@ -13,9 +13,9 @@ function App()
     <div className="App">
       <Navigation />
       <Hero />
+      <Projects />
       <About />
       <TechStack />
-      <Projects />
       <History />
       <Footer />
     </div>
