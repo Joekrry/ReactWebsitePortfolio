@@ -12,17 +12,8 @@ const Hero = () => {
           </h1>
           <p className="hero-description">
             MSc Software Engineering student, 
-            C# focused developer looking for opportunities to develop my skills 
-            and contribute effectively to real world projects!
+            'C#' focused developer, looking for my first professional role in the industry.
           </p>
-          <div className="hero-buttons">
-            <button 
-              className="btn-primary"
-              onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
-            >
-              View My Work
-            </button>
-          </div>
         </div>
         <div className="hero-visual">
           <div className="hero-card">
