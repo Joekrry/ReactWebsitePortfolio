@@ -22,7 +22,6 @@ const Navigation = () =>
   const navItems = 
   [
     { name: 'Projects', href: '#projects' },
-    { name: 'Tech', href: '#tech-stack' },
     { name: 'About', href: '#about' },
     { name: 'History', href: '#history' },
   ];
@@ -50,9 +49,6 @@ const Navigation = () =>
             </a>
             <a href="https://github.com/Joekrry" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
               <i className="fab fa-github"></i>
-            </a>
-            <a href="mailto:joerkerry@gmail.com" className="social-link" aria-label="Email">
-              <i className="fas fa-envelope"></i>
             </a>
             <a href="https://instagram.com/Joekrry" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
               <i className="fab fa-instagram"></i>
