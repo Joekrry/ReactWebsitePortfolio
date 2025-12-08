@@ -203,13 +203,13 @@ input, textarea, select
 
 ::-webkit-scrollbar-thumb 
 {
-  background: linear-gradient(135deg, var(--primary-dark), var(--secondary-dark));
+  background: var(--primary-dark);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover 
 {
-  background: linear-gradient(135deg, var(--secondary-dark), var(--tertiary-dark));
+  background: var(--secondary-dark);
 }
 
 /* utility classes */

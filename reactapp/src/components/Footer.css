@@ -14,7 +14,7 @@
   left: 0;
   right: 0;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(250, 248, 246, 0.2), transparent);
+  background: rgba(250, 248, 246, 0.2);
 }
 
 .footer-container 
@@ -44,10 +44,7 @@
 {
   font-size: 1.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #faf8f6, #e7e5e4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: #faf8f6;
 }
 
 .footer-section h4 
@@ -66,7 +63,7 @@
   left: 0;
   width: 30px;
   height: 2px;
-  background: linear-gradient(135deg, #faf8f6, #a8a29e);
+  background: #faf8f6;
   border-radius: 1px;
 }
 
@@ -187,7 +184,7 @@
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(135deg, #faf8f6, #a8a29e);
+  background: #faf8f6;
   transition: width 0.3s ease;
 }
 
@@ -227,7 +224,7 @@
 .footer-divider 
 {
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(250, 248, 246, 0.2), transparent);
+  background: rgba(250, 248, 246, 0.2);
   margin-bottom: 2rem;
 }
 
