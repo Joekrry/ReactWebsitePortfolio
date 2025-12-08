@@ -63,7 +63,7 @@
   width: 50px;
   height: 3px;
   background: #1c1917;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .about-story p 
@@ -84,7 +84,7 @@
 .dropdown-container 
 {
   border: 1px solid rgba(28, 25, 23, 0.1);
-  border-radius: 12px;
+  border-radius: 3px;
   overflow: hidden;
   transition: all 0.3s ease;
   background: #fefefe;
@@ -160,7 +160,7 @@
   background: #faf8f6;
   color: #1c1917;
   padding: 0.5rem 1rem;
-  border-radius: 20px;
+  border-radius: 3px;
   font-size: 0.875rem;
   font-weight: 500;
   transition: all 0.3s ease;

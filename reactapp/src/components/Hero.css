@@ -1,6 +1,6 @@
 .hero 
 {
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,12 +24,12 @@
 
 .hero-container 
 {
-  max-width: 1200px;
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 10rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  gap: 5rem;
   align-items: center;
   z-index: 1;
   position: relative;
@@ -94,7 +94,7 @@
   color: #6b7280;
   border: 1px solid rgba(28, 25, 23, 0.1);
   padding: 0.875rem 1.75rem;
-  border-radius: 12px;
+  border-radius: 3px;
   font-size: 0.875rem;
   font-weight: 500;
   cursor: pointer;
@@ -135,7 +135,7 @@
   color: #1c1917;
   border: 2px solid #1c1917;
   padding: 1rem 2rem;
-  border-radius: 50px;
+  border-radius: 3px;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -161,13 +161,13 @@
 {
   position: relative;
   background: #faf8f6;
-  border-radius: 20px;
+  border-radius: 3px;
   padding: 0;
   box-shadow: 
     0 20px 50px rgba(28, 25, 23, 0.1),
     0 0 0 1px rgba(28, 25, 23, 0.05);
   overflow: hidden;
-  max-width: 450px;
+  max-width: 500px;
   width: 100%;
 }
 
@@ -186,7 +186,7 @@
 .code-snippet 
 {
   background: #1c1917;
-  border-radius: 20px;
+  border-radius: 3px;
   overflow: hidden;
   font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
   font-size: 14px;
@@ -246,71 +246,6 @@
 .code-property { color: #34d399; }
 .code-string { color: #fbbf24; }
 
-.hero-scroll-indicator 
-{
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  color: #57534e;
-  font-size: 0.875rem;
-  animation: bounce 2s infinite;
-}
-
-.scroll-mouse 
-{
-  width: 20px;
-  height: 32px;
-  border: 2px solid #57534e;
-  border-radius: 12px;
-  position: relative;
-}
-
-.scroll-wheel 
-{
-  width: 2px;
-  height: 6px;
-  background: #57534e;
-  border-radius: 1px;
-  position: absolute;
-  top: 6px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: scrollWheel 1.5s infinite;
-}
-
-@keyframes slideInLeft 
-{
-  from 
-  {
-    opacity: 0;
-    transform: translateX(-50px);
-  }
-  to 
-  {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes slideInRight 
-{
-  from 
-  {
-    opacity: 0;
-    transform: translateX(50px);
-  }
-  to 
-  {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
 @keyframes float 
 {
   0%, 100% { transform: translateY(0px) rotate(0deg); }
@@ -321,19 +256,6 @@
 {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
-}
-
-@keyframes bounce 
-{
-  0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
-  40% { transform: translateX(-50%) translateY(-5px); }
-  60% { transform: translateX(-50%) translateY(-3px); }
-}
-
-@keyframes scrollWheel 
-{
-  0% { transform: translateX(-50%) translateY(0); opacity: 1; }
-  100% { transform: translateX(-50%) translateY(12px); opacity: 0; }
 }
 
 @media (max-width: 768px) 

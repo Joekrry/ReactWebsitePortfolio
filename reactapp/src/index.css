@@ -204,7 +204,7 @@ input, textarea, select
 ::-webkit-scrollbar-thumb 
 {
   background: var(--primary-dark);
-  border-radius: 4px;
+  border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover 
@@ -224,20 +224,6 @@ input, textarea, select
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
-}
-
-.container 
-{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 var(--spacing-lg);
-}
-
-@media (max-width: 768px) 
-{
-  .container {
-    padding: 0 var(--spacing-sm);
-  }
 }
 
 /* animation utilities */

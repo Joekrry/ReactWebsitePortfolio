@@ -33,7 +33,7 @@ const Projects = () => {
       id: 1,
       title: "GeometryWars2D",
       category: "full-stack",
-      description: "A personalised remake of the classic Geometry Wars game. Learning the basics of C# syntax.",
+      description: "A personalised remake of the classic Geometry Wars game. Learning the basics of C# syntax. Utilizing the Xna Framework and Monogame to develop a 2D arcade-style shooter game.",
       technologies: ["C#", "Xna Framework", "Monogame"],
       image: GeoWars,
       video: GeoWarsVideo,
@@ -43,12 +43,12 @@ const Projects = () => {
       id: 2,
       title: "CoverLetterGenerator",
       category: "full-stack",
-      description: "A personalised remake of the classic Geometry Wars game. Learning the basics of C# syntax.",
+      description: "A web application that generates tailored cover letters using AI, based on user inputted job descriptions and personal details. Built with a React frontend and GoLang backend, integrating OpenAI's API for content generation.",
       technologies: ["React", "GoLang"],
       image: GeoWars,
       video: CoverLetterVideo,
-      githubUrl: "https://github.com/Joekrry/Geometry-Wars-2D-Remake-in-Xna"
-    }
+      githubUrl: "https://github.com/Joekrry/CoverLetterGenerator"
+    },
   ];
 
   return (
@@ -57,7 +57,7 @@ const Projects = () => {
         <div className="section-header">
           <h2 className="section-title">Projects</h2>
           <p className="section-subtitle">
-            A continuously developing portfolio of projects showcasing my skills in full-stack development, frontend design, and backend architecture.
+            Hover over each project for clarity and click the GitHub icon to view the code!
           </p>
         </div>
 
@@ -85,7 +85,17 @@ const Projects = () => {
                     <img src={project.image} alt={project.title} />
                   )}
                   <div className="project-overlay">
-                    <h3 className="overlay-title">{project.title}</h3>
+                    <div className="overlay-header">
+                      <h3 className="overlay-title">{project.title}</h3>
+                      <div className="project-tech">
+                        {project.technologies.map((tech, i) => (
+                          <span key={i} className="tech-tag">{tech}</span>
+                        ))}
+                      </div>
+                    </div>
+                    <div className="project-description">
+                      <p>{project.description}</p>
+                    </div>
                     <div className="project-actions">
                       <a 
                         href={project.githubUrl} 

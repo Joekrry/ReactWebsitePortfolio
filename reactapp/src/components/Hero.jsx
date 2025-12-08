@@ -49,12 +49,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <div className="hero-scroll-indicator">
-        <div className="scroll-mouse">
-          <div className="scroll-wheel"></div>
-        </div>
-        <span>Scroll to explore!</span>
-      </div>
     </section>
   );
 };

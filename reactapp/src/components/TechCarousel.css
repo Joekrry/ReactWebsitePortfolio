@@ -1,0 +1,71 @@
+.tech-stack-carousel {
+  width: 100%;
+  padding: 1rem 0;
+  overflow: hidden;
+  background: #faf8f6;
+}
+
+/* Hide carousel on mobile/touchscreen devices */
+@media (max-width: 768px), (pointer: coarse) {
+  .tech-stack-carousel {
+    display: none;
+  }
+}
+
+.carousel-container {
+  overflow: hidden;
+  padding: 2rem 0;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 70%,
+    transparent
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 70%,
+    transparent
+  );
+}
+
+.tech-stack-track {
+  display: flex;
+  gap: 2.5rem;
+  width: fit-content;
+  animation: scroll 30s linear infinite;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  white-space: nowrap;
+  color: #57534e;
+  transition: color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.tech-item:hover {
+  color: #1c1917;
+}
+
+.tech-item i {
+  font-size: 1.5rem;
+}
+
+.tech-name {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.33%);
+  }
+}
