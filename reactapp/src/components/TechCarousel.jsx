@@ -34,8 +34,8 @@ const TechCarousel = () => {
         opacity: 1,
         scale: 1,
         rotation: 0,
-        duration: 1,
-        stagger: 0.1,
+        duration: 0.5,
+        stagger: 0.05,
         ease: 'back.out(1.7)'
       });
     });
