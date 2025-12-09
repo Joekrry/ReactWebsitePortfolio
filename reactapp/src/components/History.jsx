@@ -33,6 +33,7 @@ const History = () => {
       <div className="history-container">
         <div className="section-header">
           <h2 className="section-title">My Journey</h2>
+          <h3 className="section-title">Timeline</h3>
         </div>
 
         <div className="experience-list">

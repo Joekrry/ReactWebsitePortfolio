@@ -27,7 +27,6 @@ const TechCarousel = () => {
       gsap.set(validItems, {
         opacity: 0,
         scale: 0,
-        rotation: -180
       });
       
       gsap.to(validItems, {

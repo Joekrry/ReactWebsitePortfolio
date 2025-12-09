@@ -1,6 +1,5 @@
 import './Projects.css'; 
 import { useEffect, useRef } from 'react';
-import GeoWars from '../assets/GeometryWars.jpg';
 import GeoWarsVideo from '../assets/V1.0.0-GeometryWars.mp4';
 import CoverLetterVideo from '../assets/V1.0.0-CoverLetterGenerator.mp4';
 import TextEditorVideo from '../assets/V1.0.0-TextEditor.mp4';
@@ -44,7 +43,7 @@ const Projects = () => {
       title: "CoverLetterGenerator",
       category: "full-stack",
       description: "A web application that generates tailored cover letters using AI, based on user inputted job descriptions and personal details. Built with a React frontend and GoLang backend, integrating OpenAI's API for content generation.",
-      technologies: ["React", "GoLang"],
+      technologies: ["JavaScript","React", "GoLang", "OpenAI API", "Postman"],
       video: CoverLetterVideo,
       githubUrl: "https://github.com/Joekrry/CoverLetterGenerator"
     },
@@ -53,7 +52,7 @@ const Projects = () => {
       title: "TextEditor",
       category: "full-stack",
       description: "Advanced Text Editor for .NET 8 with file loading, saving, undo/redo, search, insert and command modes, keyboard shortcuts, and robust error handling, designed for efficient console-based text editing.",
-      technologies: ["C#"],
+      technologies: ["C#", ".NET 8", "Console Application"],
       video: TextEditorVideo,
       githubUrl: ""
     },
@@ -65,7 +64,7 @@ const Projects = () => {
         <div className="section-header">
           <h2 className="section-title">Projects</h2>
           <p className="section-subtitle">
-            Hover over each project for clarity and click the GitHub icon to view the code!
+            Project video previews, <span className="highlight-hover">Hover</span> over them for more details and access to the github repository.
           </p>
         </div>
 

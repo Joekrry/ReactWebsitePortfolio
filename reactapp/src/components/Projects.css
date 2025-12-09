@@ -1,6 +1,6 @@
 .projects 
 {
-  padding: 11rem 0;
+  padding: 7rem 0;
   background: linear-gradient(135deg, #faf8f6 0%, #f5f5f4 100%);
 }
 
@@ -38,12 +38,12 @@
 .section-subtitle 
 {
   font-size: 1.2rem;
-  color: #57534e;
-  max-width: 600px;
-  margin: 0 auto;
-  line-height: 1.6;
 }
 
+.highlight-hover {
+  color: #FF5030;
+  font-weight: bold;
+}
 
 
 .project-overlay 

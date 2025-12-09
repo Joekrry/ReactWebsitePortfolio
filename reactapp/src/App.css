@@ -3,4 +3,6 @@
 {
   min-height: 100vh;
   position: relative;
+  background: var(--primary-dark);
+  color: var(--primary-light);
 }

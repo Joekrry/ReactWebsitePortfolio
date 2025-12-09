@@ -3,8 +3,8 @@ import TechCarousel from './components/TechCarousel'
 import TechStack from './components/TechStack'
 import Hero from './components/Hero'
 import About from './components/About'
-import Projects from './components/Projects'
 import History from './components/History'
+import Projects from './components/Projects'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -18,7 +18,6 @@ function App()
       <Projects />
       <TechStack />
       <About />
-      <History />
       <Footer />
     </div>
   )
