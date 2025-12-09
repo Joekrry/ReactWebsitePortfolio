@@ -1,7 +1,7 @@
 import './Projects.css'; 
 import { useEffect, useRef } from 'react';
 import GeoWarsVideo from '../assets/V1.0.0-GeometryWars.mp4';
-import CoverLetterVideo from '../assets/V1.0.0-CoverLetterGenerator.mp4';
+import CoverLetterVideo from '../assets/V1.0.1-CoverLetterGenerator.mp4';
 import TextEditorVideo from '../assets/V1.0.0-TextEditor.mp4';
 
 const Projects = () => {
