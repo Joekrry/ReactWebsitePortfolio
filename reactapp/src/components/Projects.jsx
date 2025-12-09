@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import GeoWars from '../assets/GeometryWars.jpg';
 import GeoWarsVideo from '../assets/V1.0.0-GeometryWars.mp4';
 import CoverLetterVideo from '../assets/V1.0.0-CoverLetterGenerator.mp4';
+import TextEditorVideo from '../assets/V1.0.0-TextEditor.mp4';
 
 const Projects = () => {
   const videoRefs = useRef([]);
@@ -35,7 +36,6 @@ const Projects = () => {
       category: "full-stack",
       description: "A personalised remake of the classic Geometry Wars game. Learning the basics of C# syntax. Utilizing the Xna Framework and Monogame to develop a 2D arcade-style shooter game.",
       technologies: ["C#", "Xna Framework", "Monogame"],
-      image: GeoWars,
       video: GeoWarsVideo,
       githubUrl: "https://github.com/Joekrry/Geometry-Wars-2D-Remake-in-Xna"
     },
@@ -45,9 +45,17 @@ const Projects = () => {
       category: "full-stack",
       description: "A web application that generates tailored cover letters using AI, based on user inputted job descriptions and personal details. Built with a React frontend and GoLang backend, integrating OpenAI's API for content generation.",
       technologies: ["React", "GoLang"],
-      image: GeoWars,
       video: CoverLetterVideo,
       githubUrl: "https://github.com/Joekrry/CoverLetterGenerator"
+    },
+    {
+      id: 3,
+      title: "TextEditor",
+      category: "full-stack",
+      description: "Advanced Text Editor for .NET 8 with file loading, saving, undo/redo, search, insert and command modes, keyboard shortcuts, and robust error handling, designed for efficient console-based text editing.",
+      technologies: ["C#"],
+      video: TextEditorVideo,
+      githubUrl: ""
     },
   ];
 
