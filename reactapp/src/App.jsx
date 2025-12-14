@@ -13,7 +13,6 @@ function App()
   return (
     <div className="App">
       <Navigation />
-      <TechCarousel />
       <Hero />
       <Projects />
       <TechStack />
