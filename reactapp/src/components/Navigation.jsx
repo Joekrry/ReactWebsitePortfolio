@@ -22,8 +22,8 @@ const Navigation = () =>
   const navItems = 
   [
     { name: 'Projects', href: '#projects' },
+    { name: 'Technologies', href: '#tech-stack' },
     { name: 'About', href: '#about' },
-    { name: 'History', href: '#history' },
   ];
 
   const scrollToSection = (href) => 

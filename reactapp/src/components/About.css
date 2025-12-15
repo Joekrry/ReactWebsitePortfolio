@@ -1,8 +1,8 @@
-.about 
-{
+/* Standardized section spacing */
+.about {
   background: #faf8f6;
   position: relative;
-  padding-bottom: 3rem;
+  padding: 6rem 0;
 }
 
 .about-container 
@@ -177,8 +177,7 @@
 
 @media (max-width: 768px) 
 {
-  .about 
-  {
+  .about {
     padding: 4rem 0;
   }
 
@@ -217,8 +216,10 @@
 
 @media (max-width: 480px) 
 {
-  .section-title 
-  {
+  .about {
+    padding: 3rem 0;
+  }
+  .section-title {
     font-size: 2rem;
   }
 }

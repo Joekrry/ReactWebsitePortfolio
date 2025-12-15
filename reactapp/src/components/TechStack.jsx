@@ -4,12 +4,11 @@ import './TechStack.css';
 const technologies = [
   { name: "C#", description: "General purpose programming language", icon: "fa-solid fa-c" },
   { name: ".NET Core", description: "Cross-platform framework for building applications", icon: "fa-solid fa-network-wired" },
+  { name: "JavaScript", description: "ES6+ modern JavaScript development", icon: "fa-brands fa-js" },
   { name: "C", description: "Server-side programming language", icon: "fa-solid fa-c" },
-  { name: "JavaScipt", description: "ES6+ modern JavaScript development", icon: "fa-brands fa-js" },
   { name: "Java", description: "General purpose programming language", icon: "fa-brands fa-java" },
   { name: "HTML", description: "Markup language for creating web pages", icon: "fa-brands fa-html5" },
   { name: "CSS", description: "Advanced styling with animations and responsiveness", icon: "fa-brands fa-css3-alt" },
-  { name: "JavaScript", description: "ES6+ modern JavaScript development", icon: "fa-brands fa-js" },
   { name: "React", description: "Component-based UI library for building web applications", icon: "fa-brands fa-react" },
   { name: "Node.js", description: "JavaScript runtime for server-side development", icon: "fa-brands fa-node-js" },
   { name: "MySQL", description: "Relational database management system", icon: "fa-solid fa-database" },
@@ -27,9 +26,6 @@ const TechStack = () => {
       <div className="tech-container">
         <div className="section-header">
           <h2 className="section-title">Current technologies</h2>
-          <p className="section-subtitle">
-            I&apos;m proficient in a range of modern technologies that empower me to build highly functional solutions. These are some of my main technologies.
-          </p>
         </div>
         <div className="tech-grid" style={{marginTop: '2rem'}}>
           {technologies.map((tech, idx) => (

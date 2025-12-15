@@ -1,5 +1,4 @@
-.history 
-{
+.history {
   padding: 6rem 0;
   background: #faf8f6;
   position: relative;
@@ -128,8 +127,7 @@
 
 @media (max-width: 768px) 
 {
-  .history 
-  {
+  .history {
     padding: 4rem 0;
   }
 
@@ -176,8 +174,7 @@
 
 @media (max-width: 480px) 
 {
-  .history
-  {
+  .history {
     padding: 3rem 0;
   }
 
