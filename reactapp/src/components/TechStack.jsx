@@ -2,23 +2,23 @@
 import './TechStack.css';
 
 const technologies = [
-  { name: "C#", description: "General purpose programming language", icon: "fa-solid fa-c" },
-  { name: ".NET Core", description: "Cross-platform framework for building applications", icon: "fa-solid fa-network-wired" },
-  { name: "JavaScript", description: "ES6+ modern JavaScript development", icon: "fa-brands fa-js" },
-  { name: "C", description: "Server-side programming language", icon: "fa-solid fa-c" },
-  { name: "Java", description: "General purpose programming language", icon: "fa-brands fa-java" },
-  { name: "HTML", description: "Markup language for creating web pages", icon: "fa-brands fa-html5" },
-  { name: "CSS", description: "Advanced styling with animations and responsiveness", icon: "fa-brands fa-css3-alt" },
-  { name: "React", description: "Component-based UI library for building web applications", icon: "fa-brands fa-react" },
-  { name: "Node.js", description: "JavaScript runtime for server-side development", icon: "fa-brands fa-node-js" },
-  { name: "MySQL", description: "Relational database management system", icon: "fa-solid fa-database" },
-  { name: "MongoDB", description: "NoSQL database for flexible data storage", icon: "fa-solid fa-database" },
-  { name: "RESTful API's", description: "Information exchange interface", icon: "fa-solid fa-code" },
-  { name: "Git", description: "Version control and collaborative development", icon: "fa-brands fa-git-alt" },
-  { name: "Figma", description: "UI/UX design and prototyping", icon: "fa-brands fa-figma" },
-  { name: "Postman", description: "API testing and development", icon: "fa-solid fa-paper-plane" },
-  { name: "VScode & Visual studio", description: "Integrated Development Environment.", icon: "fa-solid fa-computer" },
-      ];
+  { name: "C#", icon: "fa-solid fa-c" },
+  { name: ".NET Core", icon: "fa-solid fa-network-wired" },
+  { name: "JavaScript", icon: "fa-brands fa-js" },
+  { name: "C", icon: "fa-solid fa-c" },
+  { name: "Java", icon: "fa-brands fa-java" },
+  { name: "HTML", icon: "fa-brands fa-html5" },
+  { name: "CSS", icon: "fa-brands fa-css3-alt" },
+  { name: "React", icon: "fa-brands fa-react" },
+  { name: "Node.js", icon: "fa-brands fa-node-js" },
+  { name: "MySQL", icon: "fa-solid fa-database" },
+  { name: "MongoDB", icon: "fa-solid fa-database" },
+  { name: "RESTful API's", icon: "fa-solid fa-code" },
+  { name: "Git", icon: "fa-brands fa-git-alt" },
+  { name: "Figma", icon: "fa-brands fa-figma" },
+  { name: "Postman", icon: "fa-solid fa-paper-plane" },
+  { name: "VScode & Visual studio", icon: "fa-solid fa-computer" },
+];
 
 const TechStack = () => {
   return (
@@ -33,7 +33,6 @@ const TechStack = () => {
               <i className={tech.icon}></i>
               <div className="tech-info">
                 <h4>{tech.name}</h4>
-                <p>{tech.description}</p>
               </div>
             </div>
           ))}

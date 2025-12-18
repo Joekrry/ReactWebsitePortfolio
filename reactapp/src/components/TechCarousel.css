@@ -40,9 +40,15 @@
 
 .tech-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 0.6rem;
-  white-space: nowrap;
+  justify-content: center;
+  width: 130px;
+  height: 110px;
+  min-height: 110px;
+  max-height: 110px;
+  gap: 0.4rem;
+  white-space: normal;
   color: #57534e;
   transition: color 0.3s ease;
   flex-shrink: 0;
@@ -53,11 +59,11 @@
 }
 
 .tech-item i {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .tech-name {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 500;
 }
 
