@@ -88,7 +88,11 @@ const About = () =>
             <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
               In October 2023 I started learning to code, focusing on web development with JavaScript, React, HTML, and CSS.
               I knew I had to catch up on years of theoretical and practical knowledge to transition into a computing based career and therefore
-              followed various roadmaps to build a strong fundamental understanding of theoretical computer science.
+              followed various roadmaps and courses to build a strong fundamental understanding of theoretical computer science and syntactical coding knowledge.
+            </p>
+            <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
+              In September 2025, I enrolled in MSc Software Engineering to gain formal qualifications and a structured learning environment to learn not more advanced practical coding,
+              but also system architecture, design, planning and analysis. Below are the modules I am undertaking as part of this degree, alongside the modules from my undergraduate degree.
             </p>
 
             <div className="education-modules">
