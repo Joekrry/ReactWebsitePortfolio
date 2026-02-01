@@ -151,10 +151,7 @@
   background: #fff;
   border-radius: 8px;
   padding: 0.75rem 0.5rem 0.75rem 0.5rem;
-  transition: box-shadow 0.25s cubic-bezier(0.4,0.2,0.2,1),
-              border-color 0.25s cubic-bezier(0.4,0.2,0.2,1),
-              background 0.25s cubic-bezier(0.4,0.2,0.2,1),
-              transform 0.22s cubic-bezier(0.4,0.2,0.2,1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1.5px solid rgba(28, 25, 23, 0.08);
   animation: slideInUp 0.4s ease-out forwards;
   opacity: 0;
@@ -173,12 +170,14 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  cursor: pointer;
 }
 
 .tech-card i {
   font-size: 2rem;
   color: #1c1917;
   margin-bottom: 0.3rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tech-card:hover {
@@ -187,12 +186,14 @@
   justify-content: flex-start;
   align-items: center;
   padding: 0.75rem 1rem;
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(28, 25, 23, 0.15);
 }
 
 .tech-card:hover i {
   color: #FF5030;
-  text-shadow: 0 2px 8px rgba(60, 130, 246, 0.15);
-  transition: color 0.22s cubic-bezier(0.4,0.2,0.2,1), text-shadow 0.22s cubic-bezier(0.4,0.2,0.2,1);
+  text-shadow: 0 2px 8px rgba(255, 80, 48, 0.3);
+  transform: scale(1.1);
 }
 
 .tech-card:hover .tech-info p {
@@ -212,6 +213,7 @@
 .tech-info {
   margin-bottom: 0;
   padding: 0 0.25rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tech-info h4 {
@@ -228,6 +230,7 @@
   font-size: 0.75rem;
   margin: 0;
   display: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tech-summary 

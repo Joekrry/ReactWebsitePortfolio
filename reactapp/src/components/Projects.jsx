@@ -64,7 +64,7 @@ const Projects = () => {
         <div className="section-header">
           <h2 className="section-title">Projects</h2>
           <p className="section-subtitle">
-            Project video previews, <span className="highlight-hover">Hover</span> over them for more details and access to the github repository.
+            Project video previews with details and GitHub repository access.
           </p>
         </div>
 

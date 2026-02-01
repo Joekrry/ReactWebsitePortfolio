@@ -67,6 +67,13 @@
   opacity: 1;
 }
 
+/* Always show overlay on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .project-overlay {
+    opacity: 1;
+  }
+}
+
 .overlay-header
 {
   display: flex;
@@ -224,13 +231,35 @@
 
   .projects-grid 
   {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .project-actions 
   {
     gap: 0.75rem;
+  }
+
+  .project-image {
+    height: 400px;
+  }
+
+  .overlay-header {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .overlay-title {
+    font-size: 1.25rem;
+  }
+
+  .project-tech {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .action-btn {
+    font-size: 2.5rem;
   }
 }
 
