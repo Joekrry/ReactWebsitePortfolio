@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import GeoWarsVideo from '../assets/V1.0.0-GeometryWars.mp4';
 import CoverLetterVideo from '../assets/V1.0.1-CoverLetterGenerator.mp4';
 import TextEditorVideo from '../assets/V1.0.0-TextEditor.mp4';
+import FlashcardsVideo from '../assets/V1.0.0-FlashCards.mp4';
 
 const Projects = () => {
   const videoRefs = useRef([]);
@@ -55,6 +56,15 @@ const Projects = () => {
       technologies: ["C#", ".NET 8", "Console Application"],
       video: TextEditorVideo,
       githubUrl: ""
+    },
+    {
+      id: 5,
+      title: "Flashcards App",
+      category: "full-stack",
+      description: "I didn't want to pay for quizlet but wanted to use flashcards for revision, I built the frontend with react and connected the backend to locally hosted SQLite database to store the flashcards set, folders, username, password,",
+      technologies: ["JavaScript","React", "SQLite", "Node.js"],
+      video: FlashcardsVideo,
+      githubUrl: "https://github.com/Joekrry/flashcards"
     },
   ];
 
