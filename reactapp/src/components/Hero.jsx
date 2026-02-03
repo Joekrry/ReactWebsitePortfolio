@@ -38,7 +38,7 @@ const Hero = () => {
                   <span className="code-property">userLanguages = </span><span className="code-keyword">new</span>[] {'{'}<span className="code-variable"></span><span className="code-string">"C#"</span>, <span className="code-string">"C"</span>, <span className="code-string">"Java"</span>, <span className="code-string">"Js"</span>{'}'},
                 </div>
                 <div className="code-line code-indent">
-                  <span className="code-property">yearsOfExperience = </span><span className="code-variable">!null</span>,
+                  <span className="code-property">CurrentRole = </span><span className="code-string">"Student"</span>,
                 </div>
                 <div className="code-line">{'};'}</div>
               </div>
