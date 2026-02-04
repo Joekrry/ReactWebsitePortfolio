@@ -60,7 +60,6 @@
   border-radius: 3px;
   font-weight: 500;
   font-size: 0.875rem;
-  cursor: pointer;
   transition: all 0.2s ease;
   position: relative;
   white-space: nowrap;
@@ -75,15 +74,6 @@
 .category-btn::before 
 {
   display: none;
-}
-
-.category-btn:hover,
-.category-btn.active 
-{
-  color: #1c1917;
-  border-color: rgba(28, 25, 23, 0.2);
-  box-shadow: 0 4px 16px rgba(28, 25, 23, 0.12);
-  transform: translateY(-2px);
 }
 
 .category-btn.active 
@@ -151,12 +141,11 @@
   background: #fff;
   border-radius: 8px;
   padding: 0.75rem 0.5rem 0.75rem 0.5rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   border: 1.5px solid rgba(28, 25, 23, 0.08);
   animation: slideInUp 0.4s ease-out forwards;
   opacity: 0;
   transform: translateY(10px);
-  box-shadow: 0 2px 8px rgba(28, 25, 23, 0.08);
+  box-shadow: 10px 10px 5px rgba(28, 25, 23, 0.1);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -170,50 +159,17 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  cursor: pointer;
 }
 
 .tech-card i {
   font-size: 2rem;
   color: #1c1917;
   margin-bottom: 0.3rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.tech-card:hover {
-  width: 250px;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0.75rem 1rem;
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(28, 25, 23, 0.15);
-}
-
-.tech-card:hover i {
-  color: #FF5030;
-  text-shadow: 0 2px 8px rgba(255, 80, 48, 0.3);
-  transform: scale(1.1);
-}
-
-.tech-card:hover .tech-info p {
-  display: block;
-}
-
-.tech-card:hover .tech-info {
-  flex-direction: row;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.tech-card:hover .tech-info h4 {
-  display: none;
 }
 
 .tech-info {
   margin-bottom: 0;
   padding: 0 0.25rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tech-info h4 {
@@ -230,7 +186,6 @@
   font-size: 0.75rem;
   margin: 0;
   display: none;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tech-summary 

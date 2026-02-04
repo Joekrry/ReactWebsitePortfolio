@@ -124,6 +124,8 @@
   align-items: flex-start;
   width: 100%;
   padding: 1rem 0;
+  overflow-y: auto;
+  max-height: calc(100% - 120px);
 }
 
 .project-description p
@@ -241,16 +243,23 @@
   }
 
   .project-image {
-    height: 400px;
+    height: 450px;
+  }
+
+  /* Always show overlay on small screens */
+  .project-overlay {
+    opacity: 1;
   }
 
   .overlay-header {
     flex-direction: column;
     gap: 0.75rem;
+    margin-bottom: 0.5rem;
   }
 
   .overlay-title {
     font-size: 1.25rem;
+    line-height: 1.3;
   }
 
   .project-tech {
@@ -258,8 +267,23 @@
     width: 100%;
   }
 
+  .tech-tag {
+    font-size: 0.7rem;
+    padding: 0.25rem 0.6rem;
+  }
+
+  .project-description {
+    padding: 0.5rem 0;
+    max-height: calc(100% - 100px);
+  }
+
+  .project-description p {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
   .action-btn {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 }
 
@@ -268,18 +292,45 @@
   .projects {
     padding: 3rem 0;
   }
+  
   .section-title {
     font-size: 2rem;
   }
 
+  .project-image {
+    height: 500px;
+  }
+
+  .project-overlay {
+    padding: 1rem;
+    opacity: 1;
+  }
+
+  .overlay-title {
+    font-size: 1.1rem;
+  }
+
+  .tech-tag {
+    font-size: 0.65rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .project-description {
+    padding: 0.25rem 0;
+  }
+
+  .project-description p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+
   .project-actions 
   {
-    flex-direction: column;
-    align-items: center;
+    gap: 0.5rem;
   }
 
   .action-btn 
   {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 }

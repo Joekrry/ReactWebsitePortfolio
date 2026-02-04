@@ -50,24 +50,11 @@
   gap: 0.4rem;
   white-space: normal;
   color: #57534e;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   flex-shrink: 0;
-  cursor: pointer;
-}
-
-.tech-item:hover {
-  color: #1c1917;
-  transform: translateY(-8px) scale(1.1);
-}
-
-.tech-item:hover i {
-  transform: scale(1.15);
-  color: #FF5030;
 }
 
 .tech-item i {
   font-size: 2rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tech-name {
