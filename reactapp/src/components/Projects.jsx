@@ -55,7 +55,7 @@ const Projects = () => {
       description: "Advanced Text Editor for .NET 8 with file loading, saving, undo/redo, search, insert and command modes, keyboard shortcuts, and robust error handling, designed for efficient console-based text editing.",
       technologies: ["C#", ".NET 8", "Console Application"],
       video: TextEditorVideo,
-      githubUrl: ""
+      githubUrl: "https://github.com/Joekrry/TextEditor"
     },
     {
       id: 5,
