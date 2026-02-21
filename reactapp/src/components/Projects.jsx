@@ -22,7 +22,7 @@ const Projects = () => {
       title: "GeometryWars2D",
       source: "closed source",
       subtitle: "2D arcade shooter remake.",
-      description: "A personalised remake of the classic Geometry Wars game. Learning the basics of C# syntax. Utilizing the Xna Framework and Monogame to develop a 2D arcade-style shooter game.",
+      description: "A personalised remake of the classic Geometry Wars game in the Xna framework (ancient). I resent any sort of graphical creation process for video games so basic geometry rendering was the way to go. Built with C# and the Xna Framework for graphics rendering. Added gamepad input management to challenge myself.",
       technologies: ["C#", "Xna Framework", "Monogame"],
       video: GeoWarsVideo,
       githubUrl: "https://github.com/Joekrry/Geometry-Wars-2D-Remake-in-Xna"
@@ -52,7 +52,7 @@ const Projects = () => {
       title: "Flashcards App",
       source: "closed source (personal use)",
       subtitle: "Self-hosted flashcard revision tool.",
-      description: "I didn't want to pay for Quizlet but wanted to use flashcards for revision. Built the frontend with React and connected the backend to a locally hosted SQLite database to store flashcard sets, folders, username, and password.",
+      description: "I didn't want to pay for Quizlet but wanted to use flashcards for revision. Built the frontend with React and connected the backend to a locally hosted SQLite database to store flashcard sets, folders, username, and password. Realised AFTER I made this that I didn't even have to pay for Quizlet to create loads of flashcards.",
       technologies: ["JavaScript", "React", "SQLite", "Node.js"],
       video: FlashcardsVideo,
       githubUrl: "https://github.com/Joekrry/flashcards"
