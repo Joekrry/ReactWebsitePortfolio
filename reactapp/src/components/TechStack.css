@@ -138,7 +138,7 @@
 }
 
 .tech-card {
-  background: #fff;
+  background: #2a2621;
   border-radius: 8px;
   padding: 0.75rem 0.5rem 0.75rem 0.5rem;
   border: 1.5px solid rgba(28, 25, 23, 0.08);
@@ -163,7 +163,7 @@
 
 .tech-card i {
   font-size: 2rem;
-  color: #1c1917;
+  color: #faf8f6;
   margin-bottom: 0.3rem;
 }
 
@@ -175,13 +175,13 @@
 .tech-info h4 {
   font-size: 1rem;
   font-weight: 700;
-  color: #1c1917;
+  color: #faf8f6;
   margin-bottom: 0.15rem;
   letter-spacing: 0.01em;
 }
 
 .tech-info p {
-  color: #78716c;
+  color: #a8a29e;
   line-height: 1.4;
   font-size: 0.75rem;
   margin: 0;
