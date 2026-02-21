@@ -50,7 +50,7 @@ const Projects = () => {
     {
       id: 4,
       title: "Flashcards App",
-      source: "closed source (personal use)",
+      source: "not deployed for obvious reasons",
       subtitle: "Self-hosted flashcard revision tool.",
       description: "I didn't want to pay for Quizlet but wanted to use flashcards for revision. Built the frontend with React and connected the backend to a locally hosted SQLite database to store flashcard sets, folders, username, and password. Realised AFTER I made this that I didn't even have to pay for Quizlet to create loads of flashcards.",
       technologies: ["JavaScript", "React", "SQLite", "Node.js"],
@@ -60,7 +60,7 @@ const Projects = () => {
     {
       id: 5,
       title: "MrMandelbrot",
-      source: "closed source (personal use)",
+      source: "not deployed for obvious reasons",
       subtitle: "Fractal exploration tool.",
       description: "A generous name for what it is to be honest. A simple tool to explore the Mandelbrot set, checks whether a point is in the bounds or not and visualises it. Built with C and SDL2 for graphics rendering.",
       technologies: ["C", "SDL2"],
