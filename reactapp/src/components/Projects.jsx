@@ -3,6 +3,7 @@ import GeoWarsVideo from '../assets/V1.0.0-GeometryWars.mp4';
 import CoverLetterVideo from '../assets/V1.0.1-CoverLetterGenerator.mp4';
 import TextEditorVideo from '../assets/V1.0.0-TextEditor.mp4';
 import FlashcardsVideo from '../assets/V1.0.0-FlashCards.mp4';
+import MrMandelbrot from '../assets/V1.0.0-MrMandelbrot.mp4';
 
 const Projects = () => {
   const projects = [
@@ -55,6 +56,16 @@ const Projects = () => {
       technologies: ["JavaScript", "React", "SQLite", "Node.js"],
       video: FlashcardsVideo,
       githubUrl: "https://github.com/Joekrry/flashcards"
+    },
+    {
+      id: 5,
+      title: "MrMandelbrot",
+      source: "closed source (personal use)",
+      subtitle: "Fractal exploration tool.",
+      description: "A generous name for what it is to be honest. A simple tool to explore the Mandelbrot set, checks whether a point is in the bounds or not and visualises it. Built with C and SDL2 for graphics rendering.",
+      technologies: ["C", "SDL2"],
+      video: MrMandelbrot,
+      githubUrl: "https://github.com/Joekrry/MrMandelbrot"
     },
   ];
 
