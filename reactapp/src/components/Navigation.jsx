@@ -6,6 +6,15 @@ const Navigation = () =>
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
+  
+  // Work status: 'available', 'subcontracting', or 'employed'
+  const [workStatus, setWorkStatus] = useState('subcontracting');
+  
+  const statusConfig = {
+    available: { text: 'Looking for work', class: 'status-available' },
+    subcontracting: { text: 'Subcontracting', class: 'status-subcontracting' },
+    employed: { text: 'Fully employed', class: 'status-employed' }
+  };
 
   useEffect(() => {
     const handleScroll = () => 
@@ -22,7 +31,6 @@ const Navigation = () =>
   const navItems = 
   [
     { name: 'Projects', href: '#projects' },
-    { name: 'Technologies', href: '#tech-stack' },
     { name: 'About', href: '#about' },
   ];
 
@@ -58,11 +66,11 @@ const Navigation = () =>
             </a>
           </div>
           
-          <div className="work-status">
+          <div className={`work-status ${statusConfig[workStatus].class}`}>
             <div className="status-indicator">
               <div className="pulse-circle"></div>
             </div>
-            <span className="status-text">Looking for work</span>
+            <span className="status-text">{statusConfig[workStatus].text}</span>
           </div>
         </div>
 

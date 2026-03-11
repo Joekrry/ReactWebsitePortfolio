@@ -1,6 +1,4 @@
 import Navigation from './components/Navigation'
-import TechCarousel from './components/TechCarousel'
-import TechStack from './components/TechStack'
 import Hero from './components/Hero'
 import About from './components/About'
 import History from './components/History'
@@ -15,7 +13,6 @@ function App()
       <Navigation />
       <Hero />
       <Projects />
-      <TechStack />
       <About />
       <Footer />
     </div>

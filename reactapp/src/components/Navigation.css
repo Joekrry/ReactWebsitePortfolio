@@ -144,6 +144,38 @@
   white-space: nowrap;
 }
 
+/* Subcontracting variant - Orange */
+.work-status.status-subcontracting .pulse-circle 
+{
+  background: #f97316;
+}
+
+.work-status.status-subcontracting .pulse-circle::before 
+{
+  background: #f97316;
+}
+
+.work-status.status-subcontracting .status-text 
+{
+  color: #f97316;
+}
+
+/* Fully employed variant - Red */
+.work-status.status-employed .pulse-circle 
+{
+  background: #ef4444;
+}
+
+.work-status.status-employed .pulse-circle::before 
+{
+  background: #ef4444;
+}
+
+.work-status.status-employed .status-text 
+{
+  color: #ef4444;
+}
+
 .back-to-top-btn 
 {
   background: #ffffff;
