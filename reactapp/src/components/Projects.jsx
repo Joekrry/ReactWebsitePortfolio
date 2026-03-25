@@ -9,10 +9,10 @@ const Projects = () => {
   const projects = [
     {
       id: -1,
-      title: "Biosignal Data Processing Framework",
+      title: "Deep Learning on EEG Biosignal Data",
       source: "in-development",
-      subtitle: "Toolkit for cleaning, harmonising and exporting biosignal data.",
-      description: "Python based framework with the goal of streamlining the processing and cleaning of biosignal data -- specifically EEG and PPG data. Modular components are developed for cleaning, diagnostics, harmonisation, validation and exporting the data. the framework currently uses CLI but in an ideal real world application would have a comprehensive GUI.",
+      subtitle: "Applying deep learning techniques to EEG data for to distinguish between various tasks",
+      description: "Dissertation project to apply deep learning techniques to EEG biosignal data, aiming to distinguish between various tasks. Applications will regard brain-computer interfaces, cognitive state monitoring, and neurological disorder diagnosis. <!!! MORE INFO TO COME !!!> ",
       technologies: ["Python 3.12+", "NumPy", "Pandas", "PyTest", "Matplotlib", "PyQt5"],
       video: null,
       githubUrl: ""

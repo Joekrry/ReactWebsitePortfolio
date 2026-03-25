@@ -8,6 +8,7 @@ const Navigation = () =>
   const [showBackToTop, setShowBackToTop] = useState(false);
   
   // Work status: 'available', 'subcontracting', or 'employed'
+  // eslint-disable-next-line no-unused-vars
   const [workStatus, setWorkStatus] = useState('subcontracting');
   
   const statusConfig = {
@@ -54,9 +55,6 @@ const Navigation = () =>
           <div className="social-links">
             <a href="https://www.linkedin.com/in/joseph-kerry-b6a488272/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="LinkedIn">
               <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/Joekrry" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
-              <i className="fab fa-github"></i>
             </a>
             <a href="https://instagram.com/Joekrry" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
               <i className="fab fa-instagram"></i>
