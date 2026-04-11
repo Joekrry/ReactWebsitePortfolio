@@ -11,7 +11,7 @@ const Hero = () => {
             <span className="hero-subtitle">West Bridgford, Nottingham, England</span>
           </h1>
           <p className="hero-description">
-            MSc Software Engineering student, LLB Hons Law with Business graduate. Working as a Systems Sub-contractor part-time, C# focused developer with skills in C, Java, JavaScript. 
+            MSc Software Engineering student, LLB Hons Law with Business graduate. Working as a Systems Sub-Contractor part-time until I finish my degree, C# focused developer with skills in C, Java, JavaScript and Python.
           </p>
         </div>
         <div className="hero-visual">
@@ -34,7 +34,7 @@ const Hero = () => {
                   <span className="code-property">userName = </span> <span className="code-string">"Joseph Kerry"</span>,
                 </div>
                 <div className="code-line code-indent">
-                  <span className="code-property">userLanguages = </span><span className="code-keyword">new</span>[] {'{'}<span className="code-variable"></span><span className="code-string">"C#"</span>, <span className="code-string">"C"</span>, <span className="code-string">"Java"</span>, <span className="code-string">"Js"</span>{'}'},
+                  <span className="code-property">userLanguages = </span><span className="code-keyword">new</span>[] {'{'}<span className="code-variable"></span><span className="code-string">"C#"</span>, <span className="code-string">"C"</span>, <span className="code-string">"Java"</span>, <span className="code-string">"JavaScript"</span>, <span className="code-string">"Python"</span>{'}'},
                 </div>
                 <div className="code-line code-indent">
                   <span className="code-property">currentRole = </span><span className="code-string">"Student"</span>,

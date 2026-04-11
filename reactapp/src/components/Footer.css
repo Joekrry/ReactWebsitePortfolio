@@ -26,8 +26,9 @@
 
 .footer-content 
 {
-  display: grid;
-  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 3rem;
   margin-bottom: 3rem;
 }
@@ -52,7 +53,7 @@
   font-size: 1.1rem;
   font-weight: 700;
   position: relative;
-  left: 35rem;
+  text-align: center;
 }
 
 .footer-section h4::after 
@@ -60,7 +61,8 @@
   content: '';
   position: absolute;
   bottom: -5px;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 30px;
   height: 2px;
   background: #faf8f6;
@@ -109,6 +111,7 @@
 .contact-info 
 {
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .contact-info p 
@@ -117,8 +120,6 @@
   line-height: 1.6;
   margin-bottom: 1rem;
   font-size: 0.95rem;
-  left: 35rem;
-  position: relative;
 }
 
 .contact-email 
@@ -128,7 +129,7 @@
   font-weight: 600;
   transition: all 0.3s ease;
   position: relative;
-  left: 35rem;
+  display: inline-block;
 }
 
 .contact-email::after 
@@ -160,8 +161,6 @@
   font-weight: 600;
   font-size: 0.9rem;
   width: 100%;
-  left: 35rem;
-  position: relative;
 }
 
 .back-to-top:hover 
@@ -186,10 +185,9 @@
 .footer-bottom-content 
 {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 1rem;
 }
 
 .footer-bottom-content p 
@@ -197,6 +195,9 @@
   color: #78716c;
   font-size: 0.9rem;
   margin: 0;
+  text-align: center;
+  left: 50%;
+  transform: translateX(10%);
 }
 
 @media (max-width: 768px) 

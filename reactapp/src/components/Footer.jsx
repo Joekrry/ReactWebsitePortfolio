@@ -9,10 +9,6 @@ const Footer = () =>
       <div className="footer-container">
         <div className="footer-content">
           <div className="footer-section">
-            <h3 className="footer-logo">My React Portfolio</h3>
-            <p className="footer-description">
-              Learning the React Framework to optimise my Front-End development skills.
-            </p>
           </div>
           <div className="footer-section">
             <h4>Get in Touch</h4>

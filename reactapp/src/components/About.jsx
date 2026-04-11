@@ -9,7 +9,7 @@ const About = () =>
 
   const softwareModules = 
   [
-    "Advanced Software Development", "System Analysis", "System Design", "Research Methods",
+    "Advanced Software Development (High Distinction)", "System Analysis and Design (High Commendation)", "Research Methods",
     "Software Design and Development", "Software Project Management", "Mobile Systems", 
     "Final Major Project"
   ];
@@ -45,62 +45,32 @@ const About = () =>
     return () => observer.disconnect();
   }, []);
 
-  const timelineData = [
-    {
-      year: "Sep 2025",
-      title: "Enrolled in MSc Software Engineering",
-      organization: "University",
-      description: "Advanced studies in software engineering, including system architecture, design, planning and analysis (Modules below).",
-    },
-    {
-      year: "Oct 2023",
-      title: "Started learning to code",
-      organization: "Self-taught",
-      description: "Focused on web development with HTML, CSS, JavaScript, and React.",
-    },
-    {
-      year: "Dec 2022",
-      title: "Built my first computer",
-      organization: "Personal Project",
-      description: "Hardware assembly, system optimization, and troubleshooting.",
-    },
-    {
-      year: "Sep 2022",
-      title: "Started Bachelors Degree in Law with Business",
-      organization: "University",
-      description: "Research methods, critical analysis, business strategy, and UK legal system.",
-    },
-  ];
-
   return (
     <section className="about" id="about" ref={aboutRef}>
       <div className="about-container">
         <div className="section-header">
-          <h2 className="section-title" style={{ fontSize: '2.5rem', fontWeight: 700, marginBottom: '1.5rem' }}>About Me</h2>
+          <h2 className="section-title">About Me</h2>
         </div>
 
         <div className="about-content">
           <div className="about-story">
-            <h3 style={{ fontSize: '1.75rem', fontWeight: 600, marginBottom: '1rem' }}>My Journey</h3>
-            <p style={{ fontSize: '1.1rem', marginBottom: '1rem' }}>
+            <p className="about-intro">
               From achieving an LLB Hons Law with Business degree, to pursuing a Master's in Software Engineering.
             </p>
-            <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
+            <p className="about-text">
               In October 2023 I started learning to code, focusing on web development with JavaScript, React, HTML, and CSS.
               I knew I had to catch up on years of theoretical and practical knowledge to transition into a computing based career and therefore
               followed various roadmaps and courses to build a strong fundamental understanding of theoretical computer science and syntactical coding knowledge.
             </p>
-            <p style={{ fontSize: '1.1rem', marginBottom: '2rem' }}>
+            <p className="about-text">
               In September 2025, I enrolled in MSc Software Engineering to gain formal qualifications and a structured learning environment to not only learn more advanced practical coding,
               but also system architecture, design, planning and analysis. Below are the modules I am undertaking as part of this degree, alongside the modules from my undergraduate degree.
             </p>
-
             <div className="education-modules">
               <div className="dropdown-container">
                 <button 
                   className={`dropdown-toggle ${isSoftwareOpen ? 'active' : ''}`}
                   onClick={() => setIsSoftwareOpen(!isSoftwareOpen)}
-                  style={{ fontSize: '1.15rem', fontWeight: 500 }}
                 >
                   <span>MSc Software Engineering Modules</span>
                   <svg className={`chevron ${isSoftwareOpen ? 'rotated' : ''}`} width="16" height="16" viewBox="0 0 16 16">
@@ -110,7 +80,15 @@ const About = () =>
                 <div className={`dropdown-content ${isSoftwareOpen ? 'open' : ''}`}>
                   <div className="module-tags">
                     {softwareModules.map((module) => (
-                      <span key={module} className="module-tag" style={{ fontSize: '0.95rem' }}>{module}</span>
+                      <span 
+                        key={module} 
+                        className={`module-tag ${
+                          module.includes('High Distinction') ? 'high-distinction' : 
+                          module.includes('High Commendation') ? 'high-commendation' : ''
+                        }`}
+                      >
+                        {module}
+                      </span>
                     ))}
                   </div>
                 </div>
@@ -120,7 +98,6 @@ const About = () =>
                 <button 
                   className={`dropdown-toggle ${isLawOpen ? 'active' : ''}`}
                   onClick={() => setIsLawOpen(!isLawOpen)}
-                  style={{ fontSize: '1.15rem', fontWeight: 500 }}
                 >
                   <span>LLB Hons Law with Business Modules</span>
                   <svg className={`chevron ${isLawOpen ? 'rotated' : ''}`} width="16" height="16" viewBox="0 0 16 16">
@@ -130,34 +107,19 @@ const About = () =>
                 <div className={`dropdown-content ${isLawOpen ? 'open' : ''}`}>
                   <div className="module-tags">
                     {lawModules.map((module) => (
-                      <span key={module} className="module-tag" style={{ fontSize: '0.95rem' }}>{module}</span>
+                      <span 
+                        key={module} 
+                        className={`module-tag ${
+                          module.includes('High Distinction') ? 'high-distinction' : 
+                          module.includes('High Commendation') ? 'high-commendation' : ''
+                        }`}
+                      >
+                        {module}
+                      </span>
                     ))}
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div className="timeline-section" style={{ marginBottom: '2.5rem' }}>
-            <h3 style={{ fontSize: '1.5rem', fontWeight: 600, marginBottom: '1rem' }}>Timeline</h3>
-            <div className="experience-list">
-              {timelineData.map((item, index) => (
-                <div 
-                  key={index} 
-                  className="experience-item"
-                  style={{ animationDelay: `${index * 0.15}s`, display: 'flex', alignItems: 'flex-start', marginBottom: '1.5rem' }}
-                >
-                  <div className="experience-marker" style={{ width: '12px', height: '12px', borderRadius: '50%', background: '#333', marginRight: '1rem', marginTop: '0.5rem' }}></div>
-                  <div className="experience-content" style={{ flex: 1 }}>
-                    <div className="experience-header" style={{ marginBottom: '0.5rem' }}>
-                      <h4 className="company-name" style={{ fontSize: '1.1rem', fontWeight: 500, margin: 0 }}>{item.organization}</h4>
-                      <h5 className="position-title" style={{ fontSize: '1.2rem', fontWeight: 600, margin: 0 }}>{item.title}</h5>
-                      <span className="period" style={{ fontSize: '1rem', color: '#666' }}>{item.year}</span>
-                    </div>
-                    <p className="experience-description" style={{ fontSize: '1rem', margin: 0 }}>{item.description}</p>
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </div>

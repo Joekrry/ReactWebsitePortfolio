@@ -10,7 +10,7 @@ const WorkExperience = () => {
       startDate: "Feb 2026",
       endDate: "Present",
       responsibilities: [
-        "Consulting documentation and requirements to develop software solutions for clients.",
+        "Creating and consulting documentation and requirements to develop software solutions for clients.",
         "Developing systems from a user perspective to ensure usability and functionality.",
       ]
     },
@@ -21,9 +21,6 @@ const WorkExperience = () => {
       <div className="experience-container">
         <div className="section-header">
           <h2 className="section-title">Work Experience</h2>
-          <p className="section-subtitle">
-            Professional journey and key contributions
-          </p>
         </div>
 
         <div className="experience-timeline">

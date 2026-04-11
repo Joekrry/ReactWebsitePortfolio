@@ -20,9 +20,9 @@
 
 .section-title 
 {
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
   color: #1c1917;
 }
 
@@ -38,9 +38,12 @@
 .about-content 
 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 4rem;
   margin-bottom: 4rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .about-story h3,
@@ -51,6 +54,14 @@
   color: #1c1917;
   margin-bottom: 1.5rem;
   position: relative;
+}
+
+.about-journey-title 
+{
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #1c1917;
 }
 
 .about-story h3::after,
@@ -64,6 +75,23 @@
   height: 3px;
   background: #1c1917;
   border-radius: 3px;
+}
+
+.about-intro 
+{
+  color: #1c1917;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.about-text 
+{
+  color: #57534e;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  font-size: 1.05rem;
 }
 
 .about-story p 
@@ -99,12 +127,12 @@
 .dropdown-toggle 
 {
   width: 100%;
-  padding: 1rem 1.5rem;
+  padding: 1.25rem 1.5rem;
   background: #faf8f6;
   border: none;
   text-align: left;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1.15rem;
+  font-weight: 500;
   color: #1c1917;
   cursor: pointer;
   display: flex;
@@ -138,33 +166,67 @@
 {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+  padding: 0 1.5rem;
 }
 
 .dropdown-content.open 
 {
-  max-height: 400px;
+  max-height: 500px;
+  padding: 0 1.5rem;
 }
 
 .module-tags 
 {
-  padding: 1.5rem;
+  padding: 1.5rem 0;
   background: #fefefe;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.625rem;
 }
 
 .module-tag 
 {
   background: #faf8f6;
   color: #1c1917;
-  padding: 0.5rem 1rem;
+  padding: 0.625rem 1.125rem;
   border-radius: 3px;
-  font-size: 0.875rem;
+  font-size: 0.95rem;
   font-weight: 500;
   transition: all 0.3s ease;
   border: 1px solid rgba(28, 25, 23, 0.1);
+}
+
+.module-tag.high-distinction 
+{
+  background: #dcfce7;
+  border-color: #22c55e;
+  color: #166534;
+  font-weight: 600;
+}
+
+.module-tag.high-distinction:hover 
+{
+  background: #22c55e;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(34, 197, 94, 0.3);
+}
+
+.module-tag.high-commendation 
+{
+  background: #fed7aa;
+  border-color: #fb923c;
+  color: #9a3412;
+  font-weight: 600;
+}
+
+.module-tag.high-commendation:hover 
+{
+  background: #fb923c;
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(251, 146, 60, 0.3);
 }
 
 .module-tag:hover 

@@ -13,7 +13,7 @@ const Projects = () => {
       source: "in-development",
       subtitle: "Applying deep learning techniques to EEG data for to distinguish between various tasks",
       description: "Dissertation project to apply deep learning techniques to EEG biosignal data, aiming to distinguish between various tasks. Applications will regard brain-computer interfaces, cognitive state monitoring, and neurological disorder diagnosis. <!!! MORE INFO TO COME !!!> ",
-      technologies: ["Python 3.12+", "NumPy", "Pandas", "PyTest", "Matplotlib", "PyQt5"],
+      technologies: ["Python 3.12+", "Pytorch", "MNE-Python", "EEGNet", "torcheeg", "pyEDFlib", "MOABB"],
       video: null,
       githubUrl: ""
     },

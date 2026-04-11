@@ -1,7 +1,6 @@
 import Navigation from './components/Navigation'
 import Hero from './components/Hero'
 import About from './components/About'
-import History from './components/History'
 import WorkExperience from './components/WorkExperience'
 import Projects from './components/Projects'
 import Footer from './components/Footer'
