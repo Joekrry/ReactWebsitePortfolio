@@ -19,6 +19,16 @@ const Projects = () => {
     },
     {
       id: 1,
+      title: "Cloud Load Balancer",
+      source: "in-development",
+      subtitle: "Implementation and Validation of a distributred cloud load balancer with encrypted file storage.",
+      description: "A Java-based distributed cloud infrastructure simulator that manages file storage across multiple Docker containers via an intelligent load balancer. Users interact with the system through a JavaFX GUI to upload, download, share, and manage files. Files are encrypted, chunked, and distributed across four file-server containers. A load balancer employs scheduling algorithms (FCFS, Round Robin, Priority Scheduling) to distribute requests, while an MQTT-based host manager dynamically scales containers based on demand. The system uses dual databases — a local SQLite instance for offline resilience and a remote MySQL container for centralised storage — with synchronisation and conflict resolution between them. A Jenkins CI/CD pipeline and a self-hosted Git server round out the infrastructure.",
+      technologies: ["Java20+", "JavaFX", "Apache Maven", "Docker", "Eclipse Mosquitto (MQTT)", "SQLite", "MySQL8", "Jenkins"],
+      video: null,
+      githubUrl: ""
+    },
+    {
+      id: 2,
       title: "GeometryWars2D",
       source: "closed source",
       subtitle: "2D arcade shooter remake.",
@@ -28,7 +38,7 @@ const Projects = () => {
       githubUrl: "https://github.com/Joekrry/Geometry-Wars-2D-Remake-in-Xna"
     },
     {
-      id: 2,
+      id: 3,
       title: "CoverLetterGenerator",
       source: "closed source",
       subtitle: "AI-powered cover letter tool.",
@@ -38,7 +48,7 @@ const Projects = () => {
       githubUrl: "https://github.com/Joekrry/CoverLetterGenerator"
     },
     {
-      id: 3,
+      id: 4,
       title: "TextEditor",
       source: "closed source",
       subtitle: "Console-based text editor for .NET 8.",
@@ -48,7 +58,7 @@ const Projects = () => {
       githubUrl: "https://github.com/Joekrry/TextEditor"
     },
     {
-      id: 4,
+      id: 5,
       title: "MrMandelbrot",
       source: "not deployed for obvious reasons",
       subtitle: "Fractal exploration tool.",
