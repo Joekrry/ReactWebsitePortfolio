@@ -9,16 +9,29 @@ const About = () =>
 
   const softwareModules = 
   [
-    "Advanced Software Development (High Distinction)", "System Analysis and Design (High Commendation)", "Research Methods",
-    "Software Design and Development", "Software Project Management", "Mobile Systems", 
-    "Final Major Project"
+    { name: "Advanced Software Development (High-Distinction)", grade: "high-distinction" },
+    { name: "System Analysis and Design (High-Commendation)", grade: "high-commendation" },
+    { name: "Software Project Management (Low-Distinction)", grade: "low-distinction" },
+    { name: "Mobile Systems", grade: "" },
+    { name: "Research Methods", grade: "" },
+    { name: "Software Design and Development", grade: "" },
+    { name: "Final Major Project", grade: "" }
   ];
 
   const lawModules = 
   [
-    "Land Law", "Applied Legal Knowledge", "Investment and Portfolio Management", "Law of Trust",
-    "Corporate Governance & Risk Management", "International Law", "Criminal Law and Criminology", 
-    "Tort Law", "Civil Practice & Procedure", "Financial Markets & Institutions", "Contract Law", "Business Analytics"
+    { name: "Land Law", grade: "" },
+    { name: "Applied Legal Knowledge", grade: "" },
+    { name: "Investment and Portfolio Management", grade: "" },
+    { name: "Law of Trust", grade: "" },
+    { name: "Corporate Governance & Risk Management", grade: "" },
+    { name: "International Law", grade: "" },
+    { name: "Criminal Law and Criminology", grade: "" },
+    { name: "Tort Law", grade: "" },
+    { name: "Civil Practice & Procedure", grade: "" },
+    { name: "Financial Markets & Institutions", grade: "" },
+    { name: "Contract Law", grade: "" },
+    { name: "Business Analytics", grade: "" }
   ];
 
   useEffect(() => 
@@ -81,13 +94,10 @@ const About = () =>
                   <div className="module-tags">
                     {softwareModules.map((module) => (
                       <span 
-                        key={module} 
-                        className={`module-tag ${
-                          module.includes('High Distinction') ? 'high-distinction' : 
-                          module.includes('High Commendation') ? 'high-commendation' : ''
-                        }`}
+                        key={module.name} 
+                        className={`module-tag ${module.grade || ''}`}
                       >
-                        {module}
+                        {module.name}
                       </span>
                     ))}
                   </div>
@@ -108,13 +118,10 @@ const About = () =>
                   <div className="module-tags">
                     {lawModules.map((module) => (
                       <span 
-                        key={module} 
-                        className={`module-tag ${
-                          module.includes('High Distinction') ? 'high-distinction' : 
-                          module.includes('High Commendation') ? 'high-commendation' : ''
-                        }`}
+                        key={module.name} 
+                        className={`module-tag ${module.grade || ''}`}
                       >
-                        {module}
+                        {module.name}
                       </span>
                     ))}
                   </div>
