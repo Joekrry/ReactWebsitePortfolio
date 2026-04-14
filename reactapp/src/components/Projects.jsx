@@ -49,16 +49,6 @@ const Projects = () => {
     },
     {
       id: 4,
-      title: "Flashcards App",
-      source: "not deployed for obvious reasons",
-      subtitle: "Self-hosted flashcard revision tool.",
-      description: "I didn't want to pay for Quizlet but wanted to use flashcards for revision. Built the frontend with React and connected the backend to a locally hosted SQLite database to store flashcard sets, folders, username, and password. Realised AFTER I made this that I didn't even have to pay for Quizlet to create loads of flashcards.",
-      technologies: ["JavaScript", "React", "SQLite", "Node.js"],
-      video: FlashcardsVideo,
-      githubUrl: "https://github.com/Joekrry/flashcards"
-    },
-    {
-      id: 5,
       title: "MrMandelbrot",
       source: "not deployed for obvious reasons",
       subtitle: "Fractal exploration tool.",
