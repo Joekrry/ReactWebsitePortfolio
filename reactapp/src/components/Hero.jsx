@@ -11,7 +11,7 @@ const Hero = () => {
             <span className="hero-subtitle">West Bridgford, Nottingham, England</span>
           </h1>
           <p className="hero-description">
-            MSc Software Engineering student, LLB Hons Law with Business graduate. Working as a systems consultant part-time until I finish my degree, C# focused developer with skills in C, Java, JavaScript and Python.
+            MSc Software Engineering student, LLB Hons Law with Business graduate. Working as a systems developer part-time until I finish my degree, C# focused developer with skills in C, Java, JavaScript and Python.
           </p>
         </div>
         <div className="hero-visual">

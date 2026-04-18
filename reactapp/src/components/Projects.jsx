@@ -8,11 +8,11 @@ import MrMandelbrot from '../assets/V1.0.0-MrMandelbrot.mp4';
 const Projects = () => {
   const projects = [
     {
-      id: -1,
-      title: "Deep Learning on EEG Biosignal Data",
-      source: "in-development",
-      subtitle: "Applying deep learning techniques to EEG data for to distinguish between various tasks",
-      description: "Dissertation project to apply deep learning techniques to EEG biosignal data, aiming to distinguish between various tasks. Applications will regard brain-computer interfaces, cognitive state monitoring, and neurological disorder diagnosis. <!!! MORE INFO TO COME !!!> ",
+      id: 101,
+      title: "Applying Deep Learning to EEG Biosignal Data for Task Classification in Brain-Computer Interfaces",
+      source: "Dissertation",
+      subtitle: "<!!! MORE INFO TO COME !!!>",
+      description: "Dissertation project to apply deep learning techniques to EEG biosignal data, aiming to distinguish between various tasks. Applications will regard brain-computer interfaces. <!!! MORE INFO TO COME !!!> ",
       technologies: ["Python 3.12+", "Pytorch", "MNE-Python", "EEGNet", "torcheeg", "pyEDFlib", "MOABB"],
       video: null,
       githubUrl: ""
@@ -30,7 +30,7 @@ const Projects = () => {
     {
       id: 2,
       title: "GeometryWars2D",
-      source: "closed source",
+      source: "open source",
       subtitle: "2D arcade shooter remake.",
       description: "A personalised remake of the classic Geometry Wars game in the Xna framework (ancient). I resent any sort of graphical creation process for video games so basic geometry rendering was the way to go. Built with C# and the Xna Framework for graphics rendering. Added gamepad input management to challenge myself.",
       technologies: ["C#", "Xna Framework", "Monogame"],
@@ -40,7 +40,7 @@ const Projects = () => {
     {
       id: 3,
       title: "CoverLetterGenerator",
-      source: "closed source",
+      source: "open source",
       subtitle: "AI-powered cover letter tool.",
       description: "A web application that generates tailored cover letters using AI, based on user inputted job descriptions and personal details. Built with a React frontend and GoLang backend, integrating OpenAI's API for content generation.",
       technologies: ["JavaScript", "React", "GoLang", "OpenAI API", "Postman"],
@@ -50,7 +50,7 @@ const Projects = () => {
     {
       id: 4,
       title: "TextEditor",
-      source: "closed source",
+      source: "open source",
       subtitle: "Console-based text editor for .NET 8.",
       description: "Advanced Text Editor for .NET 8 with file loading, saving, undo/redo, search, insert and command modes, keyboard shortcuts, and robust error handling, designed for efficient console-based text editing.",
       technologies: ["C#", ".NET 8", "Console Application"],
@@ -60,7 +60,7 @@ const Projects = () => {
     {
       id: 5,
       title: "MrMandelbrot",
-      source: "not deployed for obvious reasons",
+      source: "open source",
       subtitle: "Fractal exploration tool.",
       description: "A generous name for what it is to be honest. A simple tool to explore the Mandelbrot set, checks whether a point is in the bounds or not and visualises it. Built with C and SDL2 for graphics rendering.",
       technologies: ["C", "SDL2"],
@@ -84,13 +84,17 @@ const Projects = () => {
             {projects.map((project, index) => (
               <div
                 key={project.id}
-                className={`project-card ${project.id < 0 ? 'project-card-wide' : ''}`}
+                className={`project-card ${
+                  project.id > 100 ? 'project-card-full' :
+                  project.id < 0 ? 'project-card-wide' : ''
+                }`}
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 {/* Card header: title + source badge */}
                 <div className="card-header">
                   <h3 className="card-title">{project.title}</h3>
                   <span className={`source-badge ${
+                    project.source === 'Dissertation' ? 'dissertation' :
                     project.source === 'open source' ? 'open' :
                     project.source === 'in-development' ? 'dev' : 'closed'
                   }`}>{project.source}</span>

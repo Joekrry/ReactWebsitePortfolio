@@ -12,7 +12,7 @@ const About = () =>
     { name: "Advanced Software Development (High-Distinction)", grade: "high-distinction" },
     { name: "System Analysis and Design (High-Commendation)", grade: "high-commendation" },
     { name: "Software Project Management (Low-Distinction)", grade: "low-distinction" },
-    { name: "Mobile Systems", grade: "" },
+    { name: "Mobile Systems (Mid-Commendation) :/", grade: "mid-commendation" },
     { name: "Research Methods", grade: "" },
     { name: "Software Design and Development", grade: "" },
     { name: "Final Major Project", grade: "" }
@@ -68,16 +68,24 @@ const About = () =>
         <div className="about-content">
           <div className="about-story">
             <p className="about-intro">
-              From achieving an LLB Hons Law with Business degree, to pursuing a Master's in Software Engineering.
+              I'm a prolific gamer, I also do indoor bouldering, play both the acoustic and electric guitar and I love travelling with my girlfriend.
+              I'm a huge fan of learning and I love a challenge that make me feel like I have no idea what I'm doing!
             </p>
             <p className="about-text">
-              In October 2023 I started learning to code, focusing on web development with JavaScript, React, HTML, and CSS.
-              I knew I had to catch up on years of theoretical and practical knowledge to transition into a computing based career and therefore
-              followed various roadmaps and courses to build a strong fundamental understanding of theoretical computer science and syntactical coding knowledge.
+              I did my Bachelors degree in Law with Business, I realised around the middle of my second year that I didn't want to pursue a career in law.
+              I started learning to code and learning theoretical and practical knowledge to transition into a computing based career and therefore followed 
+              various roadmaps and courses to build a strong fundamental understanding of theoretical computer science and syntactical coding knowledge.
+
             </p>
             <p className="about-text">
-              In September 2025, I enrolled in MSc Software Engineering to gain formal qualifications and a structured learning environment to not only learn more advanced practical coding,
-              but also system architecture, design, planning and analysis. Below are the modules I am undertaking as part of this degree, alongside the modules from my undergraduate degree.
+              In September 2025, I enrolled in MSc Software Engineering to gain formal qualifications and a structured learning environment to not only 
+              learn more advanced practical coding, but also system architecture, design, planning and analysis. Below are the modules I am undertaking 
+              as part of this degree, alongside the modules from my undergraduate degree.
+            </p>
+
+            <p className ="about-text">
+              As of April 2026, I am starting my dissertation project which involves a software project plan, a literature review and a dissertation paper
+              alongside the development of my dissertation project.
             </p>
             <div className="education-modules">
               <div className="dropdown-container">

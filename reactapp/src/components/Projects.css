@@ -70,6 +70,11 @@
   grid-column: span 2;
 }
 
+/* Full width project cards (IDs > 100) */
+.project-card-full {
+  grid-column: span 3;
+}
+
 @keyframes slideInUp {
   to {
     opacity: 1;
@@ -124,6 +129,12 @@
   color: #ef4444;
   border: 1px solid #ef4444;
   background: rgba(239, 68, 68, 0.08);
+}
+
+.source-badge.dissertation {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 /* ── Media ── */
