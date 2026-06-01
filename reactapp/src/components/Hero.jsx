@@ -11,35 +11,59 @@ const Hero = () => {
             <span className="hero-subtitle">West Bridgford, Nottingham, England</span>
           </h1>
           <p className="hero-description">
-            MSc Software Engineering student, LLB Hons Law with Business graduate. Working as a systems developer part-time until I finish my degree, C# focused developer with skills in C, Java, JavaScript and Python.
+            MSc Software Engineering student, LLB Hons Law with Business Graduate. Currently working on my dissertation thesis and looking for professional opportunities!
           </p>
         </div>
         <div className="hero-visual">
           <div className="hero-card">
             <div className="card-glow"></div>
-            <div className="code-snippet">
-              <div className="code-header">
-                <div className="code-dots">
+            <div className="arch-terminal">
+              <div className="arch-header">
+                <div className="arch-dots">
                   <span></span>
                   <span></span>
                   <span></span>
                 </div>
-                <span className="code-title">portfolio.cs</span>
+                <span className="arch-title">joseph@arch: ~</span>
               </div>
-              <div className="code-content">
-                <div className="code-line">
-                  <span className="code-keyword">var</span> <span className="code-variable">developer</span> = {'new'} <br></br>{'{'}
+              <div className="arch-content">
+                <pre className="arch-logo">{`                   -\`
+                  .o+\`
+                 \`ooo/
+                \`+oooo:
+               \`+oooooo:
+               -+oooooo+:
+             \`/:-:++oooo+:
+            \`/++++/+++++++:
+           \`/++++++++++++++:
+          \`/+++ooooooooooooo/\`
+         ./ooosssso++osssssso+\`
+        .oossssso-\`\`\`\`/ossssss+\`
+       -osssssso.      :ssssssso.
+      :osssssss/        osssso+++.
+     /ossssssss/        +ssssooo/-
+   \`/ossssso+/:-        -:/+osssso+-
+  \`+sso+:-\`                 \`.-/+oso:
+ \`++:.                           \`-/+/
+ .\`                                 \`/`}</pre>
+                <div className="arch-info">
+                  <div className="arch-info-user"><span className="arch-user">joseph</span>@<span className="arch-host">arch</span></div>
+                  <div className="arch-info-divider">-----------</div>
+                  <div className="arch-info-row"><span className="arch-key">OS</span>Arch Linux x86_64</div>
+                  <div className="arch-info-row"><span className="arch-key">Host</span>Joseph Kerry</div>
+                  <div className="arch-info-row"><span className="arch-key">Kernel</span>MSc Software Engineering</div>
+                  <div className="arch-info-row"><span className="arch-key">Packages</span>C#, Python, Java, C, JS</div>
+                  <div className="arch-info-colors">
+                    <span style={{ background: '#1c1917' }}></span>
+                    <span style={{ background: '#ef4444' }}></span>
+                    <span style={{ background: '#10b981' }}></span>
+                    <span style={{ background: '#f59e0b' }}></span>
+                    <span style={{ background: '#1793d1' }}></span>
+                    <span style={{ background: '#a855f7' }}></span>
+                    <span style={{ background: '#06b6d4' }}></span>
+                    <span style={{ background: '#e7e5e4' }}></span>
+                  </div>
                 </div>
-                <div className="code-line code-indent">
-                  <span className="code-property">userName = </span> <span className="code-string">"Joseph Kerry"</span>,
-                </div>
-                <div className="code-line code-indent">
-                  <span className="code-property">userLanguages = </span><span className="code-keyword">new</span>[] {'{'}<span className="code-variable"></span><span className="code-string">"C#"</span>, <span className="code-string">"C"</span>, <span className="code-string">"Java"</span>, <span className="code-string">"JavaScript"</span>, <span className="code-string">"Python"</span>{'}'},
-                </div>
-                <div className="code-line code-indent">
-                  <span className="code-property">currentRole = </span><span className="code-string">"Student"</span>,
-                </div>
-                <div className="code-line">{'};'}</div>
               </div>
             </div>
           </div>

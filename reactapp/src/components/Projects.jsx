@@ -9,13 +9,25 @@ const Projects = () => {
   const projects = [
     {
       id: 101,
-      title: "Applying Deep Learning to EEG Biosignal Data for Task Classification in Brain-Computer Interfaces",
+      title: "Benchmarking CNN, Hybrid and Transformer Architectures for EEG Motor Imagery Classification on OpenBCI's Galea Headset using Standardised Preprocessing Pipelines",
       source: "Dissertation",
       subtitle: "<!!! MORE INFO TO COME !!!>",
-      description: "Dissertation project to apply deep learning techniques to EEG biosignal data, aiming to distinguish between various tasks. Applications will regard brain-computer interfaces. <!!! MORE INFO TO COME !!!> ",
-      technologies: ["Python 3.12+", "Pytorch", "MNE-Python", "EEGNet", "torcheeg", "pyEDFlib", "MOABB"],
+      description: "The aim of this paper is to find out what extent of reported accuracy differences between modern deep learning architectures for EEG motor imagery classification are attributable to preprocessing pipeline choices rather than architectural advances. Also, whether architectural differences persist from pipeline to pipeline, and whether different evaluation methods (LOSO and subject-specific) change the preceding answers.",
+      technologies: ["Python 3.12+", "Pytorch", "MNE-Python", "EEGNet", "EEGConformer", "Matplotlib", "Seaborn", "Jupyter Notebooks"],
       video: null,
-      githubUrl: ""
+      githubUrl: "",
+      featured: true
+    },
+    {
+      id: 6,
+      title: "Convolutional Vision Transformer",
+      source: "closed source",
+      subtitle: "Independent CvT experiment for EEG motor imagery classification.",
+      description: "Implemented a CvT using PyTorch for motor imagery classification (not for major project) on the EEGMMIDB dataset, converting raw time trials into time-frequency representations. Achieved a subject-independent accuracy on 4-class motor imagery, achieving similar results to EEGNet with an end-to-end pipeline. Visualised attention maps and convolutional filter activations to identify which EEG channel frequency bands drove predictions; findings were consistent with motor imagery neurophysiology.",
+      technologies: ["Python", "PyTorch", "EEGMMIDB", "CvT", "EEGNet", "Matplotlib"],
+      video: null,
+      githubUrl: "",
+      featured: true
     },
     {
       id: 1,
@@ -55,7 +67,8 @@ const Projects = () => {
       description: "Advanced Text Editor for .NET 8 with file loading, saving, undo/redo, search, insert and command modes, keyboard shortcuts, and robust error handling, designed for efficient console-based text editing.",
       technologies: ["C#", ".NET 8", "Console Application"],
       video: TextEditorVideo,
-      githubUrl: "https://github.com/Joekrry/TextEditor"
+      githubUrl: "https://github.com/Joekrry/TextEditor",
+      featured: true
     },
     {
       id: 5,
@@ -65,7 +78,8 @@ const Projects = () => {
       description: "A generous name for what it is to be honest. A simple tool to explore the Mandelbrot set, checks whether a point is in the bounds or not and visualises it. Built with C and SDL2 for graphics rendering.",
       technologies: ["C", "SDL2"],
       video: MrMandelbrot,
-      githubUrl: "https://github.com/Joekrry/MrMandelbrot"
+      githubUrl: "https://github.com/Joekrry/MrMandelbrot",
+      featured: true
     },
   ];
 
@@ -85,6 +99,7 @@ const Projects = () => {
               <div
                 key={project.id}
                 className={`project-card ${
+                  project.featured ? 'project-card-half' :
                   project.id > 100 ? 'project-card-full' :
                   project.id < 0 ? 'project-card-wide' : ''
                 }`}
@@ -115,7 +130,7 @@ const Projects = () => {
                     project.image ? (
                       <img src={project.image} alt={project.title} />
                     ) : (
-                      <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100%', color: '#faf8f6', fontWeight: 600, fontSize: '1.1rem', background: '#222', minHeight: '220px'}}>
+                      <div className="project-image-placeholder">
                         No video preview available
                       </div>
                     )

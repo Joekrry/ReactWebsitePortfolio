@@ -4,14 +4,15 @@ const WorkExperience = () => {
   const experiences = [
     {
       id: 1,
-      company: "Sub-contracting for various clients",
+      company: "CoreFlow Operations and NFFCTrust",
       position: "Systems Developer (part-time)",
       location: "Remote",
       startDate: "Feb 2026",
-      endDate: "Present",
+      endDate: "May 2026",
       responsibilities: [
         "Creating and consulting documentation and requirements to develop software solutions for clients.",
         "Developing systems from a user perspective to ensure usability and functionality.",
+        "Developing the NFFC Trust website using CoreFlow Operations platform"
       ]
     },
   ];

@@ -41,7 +41,7 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
   align-items: stretch;
 }
@@ -58,6 +58,7 @@
   transform: translateY(30px);
   display: flex;
   flex-direction: column;
+  grid-column: span 2;
 }
 
 .project-card:hover {
@@ -65,14 +66,19 @@
   box-shadow: 0 20px 60px rgba(28, 25, 23, 0.35);
 }
 
-/* Wide project cards (negative IDs) */
+/* Half-width featured cards (featured flag): 1.5x normal = 1/2 row, two per row */
+.project-card-half {
+  grid-column: span 3;
+}
+
+/* Wide project cards (negative IDs): 2x normal = 2/3 row */
 .project-card-wide {
-  grid-column: span 2;
+  grid-column: span 4;
 }
 
 /* Full width project cards (IDs > 100) */
 .project-card-full {
-  grid-column: span 3;
+  grid-column: span 6;
 }
 
 @keyframes slideInUp {
@@ -95,11 +101,16 @@
   color: #faf8f6;
   font-size: 1.25rem;
   font-weight: 700;
+  line-height: 1.3;
   margin: 0;
   flex: 1;
-  white-space: nowrap;
+  min-width: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  word-break: break-word;
 }
 
 .source-badge {
@@ -140,8 +151,10 @@
 /* ── Media ── */
 .project-image {
   width: 100%;
-  height: 220px;
+  aspect-ratio: 16 / 9;
+  max-height: 320px;
   overflow: hidden;
+  background: #000;
 }
 
 .project-image img,
@@ -152,6 +165,20 @@
   background: #000;
   display: block;
   transition: transform 0.3s ease;
+}
+
+.project-image-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  color: #faf8f6;
+  font-weight: 600;
+  font-size: 1.1rem;
+  background: #222;
+  text-align: center;
+  padding: 1rem;
 }
 
 .project-card:hover .project-video,
@@ -234,7 +261,26 @@
 /* ── Responsive ── */
 @media (max-width: 1024px) {
   .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .project-card {
+    grid-column: span 2;
+  }
+
+  /* Half cards collapse to same as normal at this breakpoint */
+  .project-card-half {
+    grid-column: span 2;
+  }
+
+  /* Wide and full both span full row at this breakpoint */
+  .project-card-wide,
+  .project-card-full {
+    grid-column: span 4;
+  }
+
+  .project-image {
+    max-height: 280px;
   }
 }
 
@@ -256,13 +302,16 @@
     gap: 1.5rem;
   }
 
-  /* Reset wide cards to single column on mobile */
-  .project-card-wide {
+  /* All variants collapse to single column on mobile */
+  .project-card,
+  .project-card-half,
+  .project-card-wide,
+  .project-card-full {
     grid-column: span 1;
   }
 
   .project-image {
-    height: 200px;
+    max-height: 240px;
   }
 }
 
@@ -280,7 +329,7 @@
   }
 
   .project-image {
-    height: 180px;
+    max-height: 200px;
   }
 
   .card-description {

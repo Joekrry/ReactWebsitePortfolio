@@ -17,7 +17,7 @@
   --neutral-400: #d6d3d1;
   
   /* font */
-  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  --font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', 'Courier New', monospace;
   
   /* spacing */
   --spacing-xs: 0.5rem;

@@ -9,7 +9,7 @@ const Navigation = () =>
   
   // Work status: 'available', 'subcontracting', or 'employed'
   // eslint-disable-next-line no-unused-vars
-  const [workStatus, setWorkStatus] = useState('subcontracting');
+  const [workStatus, setWorkStatus] = useState('available');
   
   const statusConfig = {
     available: { text: 'Looking for work', class: 'status-available' },
@@ -58,6 +58,9 @@ const Navigation = () =>
             </a>
             <a href="https://instagram.com/Joekrry" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
               <i className="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/Joekrry" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="GitHub">
+              <i className="fab fa-github"></i>
             </a>
             <a href="/ReactWebsitePortfolio/CV.pdf" target="_blank" rel="noopener noreferrer" className="social-link cv-link" aria-label="Download CV" download>
               <i className="fas fa-file-download"></i>

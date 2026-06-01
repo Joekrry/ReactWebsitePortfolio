@@ -183,7 +183,7 @@
   z-index: -1;
 }
 
-.code-snippet 
+.arch-terminal
 {
   background: #1c1917;
   border-radius: 3px;
@@ -192,59 +192,116 @@
   font-size: 14px;
 }
 
-.code-header 
+.arch-header
 {
   background: #2a2621;
-  padding: 1rem;
+  padding: 0.75rem 1rem;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-.code-dots 
+.arch-dots
 {
   display: flex;
   gap: 0.5rem;
 }
 
-.code-dots span 
+.arch-dots span
 {
   width: 12px;
   height: 12px;
   border-radius: 50%;
 }
 
-.code-dots span:nth-child(1) { background: #ef4444; }
-.code-dots span:nth-child(2) { background: #f59e0b; }
-.code-dots span:nth-child(3) { background: #10b981; }
+.arch-dots span:nth-child(1) { background: #ef4444; }
+.arch-dots span:nth-child(2) { background: #f59e0b; }
+.arch-dots span:nth-child(3) { background: #10b981; }
 
-.code-title 
+.arch-title
 {
   color: #a8a29e;
   font-size: 12px;
 }
 
-.code-content 
+.arch-content
 {
-  padding: 1.5rem;
+  padding: 1.25rem 1rem;
   color: #e7e5e4;
-  line-height: 1.6;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  line-height: 1.15;
 }
 
-.code-line 
+.arch-logo
 {
-  margin-bottom: 0.5rem;
+  color: #1793d1;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 8px;
+  line-height: 1.1;
+  margin: 0;
+  white-space: pre;
+  text-shadow: 0 0 8px rgba(23, 147, 209, 0.4);
+  flex-shrink: 0;
 }
 
-.code-indent 
+.arch-info
 {
-  padding-left: 2rem;
+  flex: 1;
+  min-width: 0;
+  font-size: 12px;
+  line-height: 1.5;
 }
 
-.code-keyword { color: #f472b6; }
-.code-variable { color: #60a5fa; }
-.code-property { color: #34d399; }
-.code-string { color: #fbbf24; }
+.arch-info-user
+{
+  font-weight: 700;
+  margin-bottom: 0.15rem;
+}
+
+.arch-user,
+.arch-host
+{
+  color: #1793d1;
+}
+
+.arch-info-divider
+{
+  color: #57534e;
+  margin-bottom: 0.25rem;
+  letter-spacing: 0.05em;
+}
+
+.arch-info-row
+{
+  color: #e7e5e4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.arch-key
+{
+  color: #1793d1;
+  font-weight: 700;
+  display: inline-block;
+  min-width: 5.5rem;
+}
+
+.arch-info-colors
+{
+  display: flex;
+  gap: 2px;
+  margin-top: 0.5rem;
+}
+
+.arch-info-colors span
+{
+  width: 14px;
+  height: 14px;
+  border-radius: 1px;
+}
 
 @keyframes float 
 {
@@ -258,27 +315,27 @@
   to { transform: rotate(360deg); }
 }
 
-@media (max-width: 768px) 
+@media (max-width: 768px)
 {
-  .hero-container 
+  .hero-container
   {
     grid-template-columns: 1fr;
     gap: 2rem;
-    text-align: center;
+    text-align: left;
     padding: 3rem 1.5rem;
   }
 
-  .hero-name 
+  .hero-name
   {
     font-size: 2.5rem;
   }
 
-  .hero-buttons 
+  .hero-buttons
   {
-    justify-content: center;
+    justify-content: flex-start;
   }
 
-  .hero-card 
+  .hero-card
   {
     max-width: 350px;
   }
