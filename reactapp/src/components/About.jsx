@@ -87,7 +87,9 @@ const About = () =>
               As of April 2026, I am starting my dissertation project which involves a software project plan, a literature review and a dissertation paper
               alongside the development of my dissertation project.
             </p>
-            <div className="education-modules">
+          </div>
+
+          <div className="education-modules">
               <div className="dropdown-container">
                 <button 
                   className={`dropdown-toggle ${isSoftwareOpen ? 'active' : ''}`}
@@ -136,7 +138,6 @@ const About = () =>
                 </div>
               </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
