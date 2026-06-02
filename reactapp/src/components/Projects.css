@@ -148,6 +148,12 @@
   background: rgba(255, 255, 255, 0.08);
 }
 
+.source-badge.misc {
+  color: #a8a29e;
+  border: 1px solid #a8a29e;
+  background: rgba(168, 162, 158, 0.08);
+}
+
 /* ── Media ── */
 .project-image {
   width: 100%;
@@ -256,6 +262,77 @@
 .github-btn:hover {
   color: #faf8f6;
   transform: scale(1.15);
+}
+
+/* ── Smaller projects card (list of mini projects) ── */
+.mini-projects-card {
+  /* Query the CARD's own width (not the viewport) so the list stacks neatly
+     when the card only fills a narrow gap in the grid. */
+  container-type: inline-size;
+}
+
+.mini-projects-body {
+  padding: 0.25rem 1.25rem 1rem;
+}
+
+.mini-projects-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.mini-project-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid rgba(250, 248, 246, 0.1);
+}
+
+.mini-project-row:last-child {
+  border-bottom: none;
+}
+
+.mini-project-title {
+  flex: 0 0 16rem;
+  color: #faf8f6;
+  font-size: 0.95rem;
+  font-weight: 600;
+  word-break: break-word;
+}
+
+.mini-project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  flex: 1;
+  min-width: 0;
+}
+
+.mini-project-row .action-btn {
+  margin: 0;
+  align-self: center;
+  flex-shrink: 0;
+  font-size: 1.35rem;
+}
+
+/* Stack each row when the card itself is narrow (e.g. filling a 1/3 gap) */
+@container (max-width: 480px) {
+  .mini-project-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .mini-project-title {
+    flex-basis: auto;
+  }
+
+  .mini-project-row .action-btn {
+    align-self: flex-start;
+  }
 }
 
 /* ── Responsive ── */

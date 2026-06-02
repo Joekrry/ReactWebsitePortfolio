@@ -1,9 +1,6 @@
 import './Projects.css';
-import GeoWarsVideo from '../assets/V1.0.0-GeometryWars.mp4';
 import CoverLetterVideo from '../assets/V1.0.1-CoverLetterGenerator.mp4';
-import TextEditorVideo from '../assets/V1.0.0-TextEditor.mp4';
 import FlashcardsVideo from '../assets/V1.0.0-FlashCards.mp4';
-import MrMandelbrot from '../assets/V1.0.0-MrMandelbrot.mp4';
 
 const Projects = () => {
   const projects = [
@@ -24,7 +21,7 @@ const Projects = () => {
       source: "closed source",
       subtitle: "Independent CvT experiment for EEG motor imagery classification.",
       description: "Implemented a CvT using PyTorch for motor imagery classification (not for major project) on the EEGMMIDB dataset, converting raw time trials into time-frequency representations. Achieved a subject-independent accuracy on 4-class motor imagery, achieving similar results to EEGNet with an end-to-end pipeline. Visualised attention maps and convolutional filter activations to identify which EEG channel frequency bands drove predictions; findings were consistent with motor imagery neurophysiology.",
-      technologies: ["Python", "PyTorch", "EEGMMIDB", "CvT", "EEGNet", "Matplotlib"],
+      technologies: ["Python", "PyTorch", "EEGMMIDB", "EEGNet", "Matplotlib", "Jupyter Notebooks"],
       video: null,
       githubUrl: "",
       featured: true
@@ -40,48 +37,53 @@ const Projects = () => {
       githubUrl: ""
     },
     {
-      id: 2,
-      title: "GeometryWars2D",
-      source: "open source",
-      subtitle: "2D arcade shooter remake.",
-      description: "A personalised remake of the classic Geometry Wars game in the Xna framework (ancient). I resent any sort of graphical creation process for video games so basic geometry rendering was the way to go. Built with C# and the Xna Framework for graphics rendering. Added gamepad input management to challenge myself.",
-      technologies: ["C#", "Xna Framework", "Monogame"],
-      video: GeoWarsVideo,
-      githubUrl: "https://github.com/Joekrry/Geometry-Wars-2D-Remake-in-Xna"
-    },
-    {
       id: 3,
       title: "CoverLetterGenerator",
       source: "open source",
       subtitle: "AI-powered cover letter tool.",
-      description: "A web application that generates tailored cover letters using AI, based on user inputted job descriptions and personal details. Built with a React frontend and GoLang backend, integrating OpenAI's API for content generation.",
+      description: "A web application that generates tailored cover letters using AI, based on user inputted job descriptions and personal details. Built with a React frontend and GoLang backend, integrating OpenAI's API for content generation. The app features a user-friendly interface for inputting job and personal information, and provides options to download the generated cover letter in various formats. Postman was used for API testing and development. This project is for personal use only and is not intended for commercial distribution.",
       technologies: ["JavaScript", "React", "GoLang", "OpenAI API", "Postman"],
       video: CoverLetterVideo,
       githubUrl: "https://github.com/Joekrry/CoverLetterGenerator"
     },
+  ];
+
+  const miniProjects = [
     {
-      id: 4,
-      title: "TextEditor",
-      source: "open source",
-      subtitle: "Console-based text editor for .NET 8.",
-      description: "Advanced Text Editor for .NET 8 with file loading, saving, undo/redo, search, insert and command modes, keyboard shortcuts, and robust error handling, designed for efficient console-based text editing.",
-      technologies: ["C#", ".NET 8", "Console Application"],
-      video: TextEditorVideo,
-      githubUrl: "https://github.com/Joekrry/TextEditor",
-      featured: true
+      title: "GeometryWars2D",
+      technologies: ["C#", "Xna Framework", "Monogame"],
+      githubUrl: "https://github.com/Joekrry/Geometry-Wars-2D-Remake-in-Xna"
     },
     {
-      id: 5,
+      title: "TextEditor",
+      technologies: ["C#", ".NET 8", "Console Application"],
+      githubUrl: "https://github.com/Joekrry/TextEditor"
+    },
+    {
       title: "MrMandelbrot",
-      source: "open source",
-      subtitle: "Fractal exploration tool.",
-      description: "A generous name for what it is to be honest. A simple tool to explore the Mandelbrot set, checks whether a point is in the bounds or not and visualises it. Built with C and SDL2 for graphics rendering.",
       technologies: ["C", "SDL2"],
-      video: MrMandelbrot,
-      githubUrl: "https://github.com/Joekrry/MrMandelbrot",
-      featured: true
+      githubUrl: "https://github.com/Joekrry/MrMandelbrot"
     },
   ];
+
+  // Work out how much room is left in the last row of the 6-column grid so the
+  // "Other Projects" card can fill a 1/3 (span 2) or 1/2 (span 3) gap, etc.
+  // If the last row is already full, fall back to a full-width card.
+  const columnSpan = (project) => {
+    if (project.featured) return 3; // half row
+    if (project.id > 100) return 6; // full row
+    if (project.id < 0) return 4;   // two-thirds row
+    return 2;                       // one-third row
+  };
+
+  const usedInLastRow = projects.reduce((col, project) => {
+    const span = columnSpan(project);
+    return (col + span > 6 ? span : col + span) % 6;
+  }, 0);
+
+  const leftover = usedInLastRow === 0 ? 6 : 6 - usedInLastRow;
+  const fillClass =
+    { 2: '', 3: 'project-card-half', 4: 'project-card-wide' }[leftover] ?? 'project-card-full';
 
   return (
     <section className="projects" id="projects">
@@ -170,6 +172,51 @@ const Projects = () => {
                 </div>
               </div>
             ))}
+
+            {/* Smaller projects — a list card, always rendered last */}
+            <div
+              className={['project-card', fillClass, 'mini-projects-card'].filter(Boolean).join(' ')}
+              style={{ animationDelay: `${projects.length * 0.1}s` }}
+            >
+              <div className="card-header">
+                <h3 className="card-title">Other Projects and Coding Fun</h3>
+                <span className="source-badge misc">misc</span>
+              </div>
+              <div className="mini-projects-body">
+                <ul className="mini-projects-list">
+                  {miniProjects.map((mini) => (
+                    <li key={mini.title} className="mini-project-row">
+                      <span className="mini-project-title">{mini.title}</span>
+                      <div className="mini-project-tech">
+                        {mini.technologies.map((tech, i) => {
+                          let hue = Math.floor(Math.random() * 360) - 20;
+                          if (hue < 0) hue += 360;
+                          const pastelColor = `hsl(${hue}, 70%, 85%)`;
+                          return (
+                            <span
+                              key={i}
+                              className="tech-tag"
+                              style={{ background: pastelColor, color: '#222', borderColor: pastelColor }}
+                            >
+                              {tech}
+                            </span>
+                          );
+                        })}
+                      </div>
+                      <a
+                        href={mini.githubUrl}
+                        className="action-btn github-btn"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`View ${mini.title} on GitHub`}
+                      >
+                        <i className="fab fa-github"></i>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
