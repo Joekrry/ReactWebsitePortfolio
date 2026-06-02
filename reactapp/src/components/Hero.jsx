@@ -24,7 +24,7 @@ const Hero = () => {
                   <span></span>
                   <span></span>
                 </div>
-                <span className="arch-title">joseph@arch: ~</span>
+                <span className="arch-title">joe@arch: ~</span>
               </div>
               <div className="arch-content">
                 <pre className="arch-logo">{`                   -\`
@@ -47,12 +47,12 @@ const Hero = () => {
  \`++:.                           \`-/+/
  .\`                                 \`/`}</pre>
                 <div className="arch-info">
-                  <div className="arch-info-user"><span className="arch-user">joseph</span>@<span className="arch-host">arch</span></div>
+                  <div className="arch-info-user"><span className="arch-user">joe</span>@<span className="arch-host">arch</span></div>
                   <div className="arch-info-divider">-----------</div>
                   <div className="arch-info-row"><span className="arch-key">OS</span>Arch Linux x86_64</div>
                   <div className="arch-info-row"><span className="arch-key">Host</span>Joseph Kerry</div>
                   <div className="arch-info-row"><span className="arch-key">Kernel</span>MSc Software Engineering</div>
-                  <div className="arch-info-row"><span className="arch-key">Packages</span>C#, Python, Java, C, JS</div>
+                  <div className="arch-info-row"><span className="arch-key">Packages</span>C#, Python, Java, C</div>
                   <div className="arch-info-colors">
                     <span style={{ background: '#1c1917' }}></span>
                     <span style={{ background: '#ef4444' }}></span>

@@ -34,6 +34,16 @@ const About = () =>
     { name: "Business Analytics", grade: "" }
   ];
 
+  const techStack = [
+    { label: "Languages", items: ["Python", "C#", "C", "Java"] },
+    { label: "Frontend", items: ["HTML", "CSS", "JavaScript", "React", "Vite", "Tailwind CSS"] },
+    { label: "Backend", items: ["Node.js", "REST APIs"] },
+    { label: "Databases", items: ["SQL", "SQLite", "PostgreSQL"] },
+    { label: "DevOps & Tools", items: ["Docker", "Git", "GitHub", "Linux", "Postman"] },
+    { label: "Machine Learning / AI", items: ["PyTorch", "NumPy", "MNE-Python", "pytest"] },
+    { label: "Workspaces", items: ["Arch", "Vim"] },
+  ];
+
   useEffect(() => 
     {
     const observer = new IntersectionObserver(
@@ -138,6 +148,22 @@ const About = () =>
                 </div>
               </div>
             </div>
+
+          <div className="tech-stack">
+            <h3 className="tech-stack-title">Tech Stack</h3>
+            <div className="tech-stack-categories">
+              {techStack.map((category) => (
+                <div className="tech-stack-category" key={category.label}>
+                  <span className="tech-stack-label">{category.label}</span>
+                  <div className="tech-stack-items">
+                    {category.items.map((item) => (
+                      <span className="tech-stack-tag" key={item}>{item}</span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
