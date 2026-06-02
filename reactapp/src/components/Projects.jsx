@@ -179,7 +179,7 @@ const Projects = () => {
               style={{ animationDelay: `${projects.length * 0.1}s` }}
             >
               <div className="card-header">
-                <h3 className="card-title">Other Projects and Coding Fun</h3>
+                <h3 className="card-title">Other Projects and Coding</h3>
                 <span className="source-badge misc">misc</span>
               </div>
               <div className="mini-projects-body">
