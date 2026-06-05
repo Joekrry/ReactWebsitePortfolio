@@ -1,6 +1,4 @@
 import './Projects.css';
-import CoverLetterVideo from '../assets/V1.0.1-CoverLetterGenerator.mp4';
-import FlashcardsVideo from '../assets/V1.0.0-FlashCards.mp4';
 
 const Projects = () => {
   const projects = [
@@ -11,19 +9,17 @@ const Projects = () => {
       subtitle: "<!!! MORE INFO TO COME !!!>",
       description: "The aim of this paper is to find out what extent of reported accuracy differences between modern deep learning architectures for EEG motor imagery classification are attributable to preprocessing pipeline choices rather than architectural advances. Also, whether architectural differences persist from pipeline to pipeline, and whether different evaluation methods (LOSO and subject-specific) change the preceding answers.",
       technologies: ["Python 3.12+", "Pytorch", "MNE-Python", "EEGNet", "EEGConformer", "Matplotlib", "Seaborn", "Jupyter Notebooks"],
-      video: null,
       githubUrl: "",
       featured: true
     },
     {
       id: 6,
-      title: "Convolutional Vision Transformer",
-      source: "closed source",
-      subtitle: "Independent CvT experiment for EEG motor imagery classification.",
+      title: "Convolutional Vision Transformer - Temporal Convolutional Network (CvT-TCN) for EEG Motor Imagery Classification",
+      source: "open source",
+      subtitle: "Independent CvT-TCN experiment for EEG motor imagery classification.",
       description: "Implemented a CvT using PyTorch for motor imagery classification (not for major project) on the EEGMMIDB dataset, converting raw time trials into time-frequency representations. Achieved a subject-independent accuracy on 4-class motor imagery, achieving similar results to EEGNet with an end-to-end pipeline. Visualised attention maps and convolutional filter activations to identify which EEG channel frequency bands drove predictions; findings were consistent with motor imagery neurophysiology.",
       technologies: ["Python", "PyTorch", "EEGMMIDB", "EEGNet", "Matplotlib", "Jupyter Notebooks"],
-      video: null,
-      githubUrl: "",
+      githubUrl: "https://github.com/Joekrry/CVTTCN",
       featured: true
     },
     {
@@ -33,8 +29,7 @@ const Projects = () => {
       subtitle: "Implementation and Validation of a distributred cloud load balancer with encrypted file storage.",
       description: "A Java-based distributed cloud infrastructure simulator that manages file storage across multiple Docker containers via an intelligent load balancer. Users interact with the system through a JavaFX GUI to upload, download, share, and manage files. Files are encrypted, chunked, and distributed across four file-server containers. A load balancer employs scheduling algorithms (FCFS, Round Robin, Priority Scheduling) to distribute requests, while an MQTT-based host manager dynamically scales containers based on demand. The system uses dual databases — a local SQLite instance for offline resilience and a remote MySQL container for centralised storage — with synchronisation and conflict resolution between them. A Jenkins CI/CD pipeline and a self-hosted Git server round out the infrastructure.",
       technologies: ["Java20+", "JavaFX", "Apache Maven", "Docker", "Eclipse Mosquitto (MQTT)", "SQLite", "MySQL8", "Jenkins"],
-      video: null,
-      githubUrl: ""
+      githubUrl: "https://github.com/Joekrry/DistributedCloudLoadBalancer"
     },
     {
       id: 3,
@@ -43,7 +38,6 @@ const Projects = () => {
       subtitle: "AI-powered cover letter tool.",
       description: "A web application that generates tailored cover letters using AI, based on user inputted job descriptions and personal details. Built with a React frontend and GoLang backend, integrating OpenAI's API for content generation. The app features a user-friendly interface for inputting job and personal information, and provides options to download the generated cover letter in various formats. Postman was used for API testing and development. This project is for personal use only and is not intended for commercial distribution.",
       technologies: ["JavaScript", "React", "GoLang", "OpenAI API", "Postman"],
-      video: CoverLetterVideo,
       githubUrl: "https://github.com/Joekrry/CoverLetterGenerator"
     },
   ];
@@ -91,7 +85,7 @@ const Projects = () => {
         <div className="section-header">
           <h2 className="section-title">Projects</h2>
           <p className="section-subtitle">
-            Project video previews with details and GitHub repository access.
+            Projects with details and GitHub repository access.
           </p>
         </div>
 
@@ -115,28 +109,6 @@ const Projects = () => {
                     project.source === 'open source' ? 'open' :
                     project.source === 'in-development' ? 'dev' : 'closed'
                   }`}>{project.source}</span>
-                </div>
-
-                {/* Media */}
-                <div className="project-image">
-                  {project.video ? (
-                    <video
-                      src={project.video}
-                      loop
-                      muted
-                      autoPlay
-                      playsInline
-                      className="project-video"
-                    />
-                  ) : (
-                    project.image ? (
-                      <img src={project.image} alt={project.title} />
-                    ) : (
-                      <div className="project-image-placeholder">
-                        No video preview available
-                      </div>
-                    )
-                  )}
                 </div>
 
                 {/* Card body */}

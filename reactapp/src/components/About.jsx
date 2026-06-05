@@ -41,7 +41,7 @@ const About = () =>
     { label: "Databases", items: ["SQL", "SQLite", "PostgreSQL"] },
     { label: "DevOps & Tools", items: ["Docker", "Git", "GitHub", "Linux", "Postman"] },
     { label: "Machine Learning / AI", items: ["PyTorch", "NumPy", "MNE-Python", "pytest"] },
-    { label: "Workspaces", items: ["Arch", "Vim"] },
+    { label: "Workspaces", items: ["Arch", "Vim", "VS Code", "Visual Studio"] },
   ];
 
   useEffect(() => 
@@ -77,6 +77,7 @@ const About = () =>
 
         <div className="about-content">
           <div className="about-story">
+            <h3 className="about-card-title">Background</h3>
             <p className="about-intro">
               I'm a prolific gamer, I also do indoor bouldering, play both the acoustic and electric guitar and I love travelling with my girlfriend.
               I'm a huge fan of learning and I love a challenge that make me feel like I have no idea what I'm doing!
@@ -100,6 +101,7 @@ const About = () =>
           </div>
 
           <div className="education-modules">
+            <h3 className="about-card-title">Education</h3>
               <div className="dropdown-container">
                 <button 
                   className={`dropdown-toggle ${isSoftwareOpen ? 'active' : ''}`}
@@ -150,7 +152,7 @@ const About = () =>
             </div>
 
           <div className="tech-stack">
-            <h3 className="tech-stack-title">Tech Stack</h3>
+            <h3 className="about-card-title">Tech Stack</h3>
             <div className="tech-stack-categories">
               {techStack.map((category) => (
                 <div className="tech-stack-category" key={category.label}>
