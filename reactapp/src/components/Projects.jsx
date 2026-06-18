@@ -23,6 +23,15 @@ const Projects = () => {
       featured: true
     },
     {
+      id: -1,
+      title: "ParticlePipe",
+      source: "in-development",
+      subtitle: "High-energy-physics data pipeline and analysis platform (LHC Run 3 simulation).",
+      description: "A from-scratch Python platform that simulates and reconstructs LHC-style particle-collision events, with every physics algorithm implemented by hand — no ROOT, Pythia, or even NumPy. The domain core is built on relativistic Lorentz 4-vectors and a particle database. A reproducible Monte Carlo generator samples realistic events from a private seeded RNG: power-law pT spectra, Breit-Wigner resonance lineshapes, and isotropic two-body decays boosted from the parent rest frame into the lab, producing Z→μμ/ee, J/ψ→μμ, H→γγ, soft-QCD minimum-bias and pileup, all smeared over a realistic beam vertex. A three-level asynchronous trigger then reconstructs the physics: L1 applies fast pT/ET/MET threshold cuts, L2 computes ΔR-cone lepton isolation and dimuon-mass tags, and L3 runs a simplified Kalman track fit and rebuilds resonances from opposite-sign pairs — with L2/L3 offloaded to an executor under a bounded-concurrency semaphore. The analysis engine fills hand-rolled histograms (with Σw² Poisson errors) and fits Gaussian-on-quadratic-background peaks via χ²-minimising gradient descent, extracting signal yield and S/√(S+B) significance and recovering the Z⁰ peak near 91.19 GeV and the J/ψ near 3.097 GeV. The same core is exposed through a CLI runner and an async FastAPI REST service with Server-Sent Events streaming, all backed by a 36-test suite and an installable, configurable package.",
+      technologies: ["Python 3.11+", "FastAPI", "Uvicorn", "Pydantic", "asyncio", "aiosqlite", "pytest"],
+      githubUrl: ""
+    },
+    {
       id: 1,
       title: "Cloud Load Balancer",
       source: "in-development",
