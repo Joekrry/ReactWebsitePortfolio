@@ -13,8 +13,8 @@ const About = () =>
     { name: "System Analysis and Design (High-Commendation)", grade: "high-commendation" },
     { name: "Software Project Management (Low-Distinction)", grade: "low-distinction" },
     { name: "Mobile Systems (Mid-Commendation) :/", grade: "mid-commendation" },
-    { name: "Research Methods", grade: "" },
-    { name: "Software Design and Development", grade: "" },
+    { name: "Research Methods (Mid-Distinction)", grade: "mid-distinction" },
+    { name: "Software Design and Development (Mid-Distinction)", grade: "mid-distinction" },
     { name: "Final Major Project", grade: "" }
   ];
 

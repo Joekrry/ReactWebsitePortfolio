@@ -236,13 +236,13 @@
 
 .arch-logo
 {
-  color: #1793d1;
+  color: #7dd3fc;
   font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
   font-size: 8px;
   line-height: 1.1;
   margin: 0;
   white-space: pre;
-  text-shadow: 0 0 8px rgba(23, 147, 209, 0.4);
+  text-shadow: 0 0 8px rgba(125, 211, 252, 0.4);
   flex-shrink: 0;
 }
 
@@ -263,7 +263,7 @@
 .arch-user,
 .arch-host
 {
-  color: #1793d1;
+  color: #7dd3fc;
 }
 
 .arch-info-divider
@@ -283,7 +283,7 @@
 
 .arch-key
 {
-  color: #1793d1;
+  color: #7dd3fc;
   font-weight: 700;
   display: inline-block;
   min-width: 5.5rem;

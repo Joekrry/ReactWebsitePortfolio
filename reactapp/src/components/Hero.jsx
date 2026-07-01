@@ -1,6 +1,12 @@
 import './Hero.css';
 
 const Hero = () => {
+  // One random pastel accent (same generator as the tech tags / info swatches),
+  // shared by the ASCII art and the info keys so they match on each refresh.
+  let hue = Math.floor(Math.random() * 360) - 20;
+  if (hue < 0) hue += 360;
+  const accentColor = `hsl(${hue}, 70%, 85%)`;
+
   return (
     <section className="hero" id="hero">
       <div className="hero-container">
@@ -27,7 +33,7 @@ const Hero = () => {
                 <span className="arch-title">joe@arch: ~</span>
               </div>
               <div className="arch-content">
-                <pre className="arch-logo">{`                   -\`
+                <pre className="arch-logo" style={{ color: accentColor, textShadow: `0 0 8px ${accentColor}` }}>{`                   -\`
                   .o+\`
                  \`ooo/
                 \`+oooo:
@@ -47,21 +53,21 @@ const Hero = () => {
  \`++:.                           \`-/+/
  .\`                                 \`/`}</pre>
                 <div className="arch-info">
-                  <div className="arch-info-user"><span className="arch-user">joe</span>@<span className="arch-host">arch</span></div>
+                  <div className="arch-info-user"><span className="arch-user" style={{ color: accentColor }}>joe</span>@<span className="arch-host" style={{ color: accentColor }}>arch</span></div>
                   <div className="arch-info-divider">-----------</div>
-                  <div className="arch-info-row"><span className="arch-key">OS</span>Arch Linux x86_64</div>
-                  <div className="arch-info-row"><span className="arch-key">Host</span>Joseph Kerry</div>
-                  <div className="arch-info-row"><span className="arch-key">Kernel</span>MSc Software Engineering</div>
-                  <div className="arch-info-row"><span className="arch-key">Packages</span>C#, Python, Java, C</div>
+                  <div className="arch-info-row"><span className="arch-key" style={{ color: accentColor }}>OS</span>Arch Linux x86_64</div>
+                  <div className="arch-info-row"><span className="arch-key" style={{ color: accentColor }}>Host</span>Joseph Kerry</div>
+                  <div className="arch-info-row"><span className="arch-key" style={{ color: accentColor }}>Kernel</span>MSc Software Engineering</div>
+                  <div className="arch-info-row"><span className="arch-key" style={{ color: accentColor }}>Packages</span>C#, Python, Java, C</div>
+                  <div className="arch-info-row"><span className="arch-key" style={{ color: accentColor }}>ModulesGrade</span>Low Distinction</div>
                   <div className="arch-info-colors">
-                    <span style={{ background: '#1c1917' }}></span>
-                    <span style={{ background: '#ef4444' }}></span>
-                    <span style={{ background: '#10b981' }}></span>
-                    <span style={{ background: '#f59e0b' }}></span>
-                    <span style={{ background: '#1793d1' }}></span>
-                    <span style={{ background: '#a855f7' }}></span>
-                    <span style={{ background: '#06b6d4' }}></span>
-                    <span style={{ background: '#e7e5e4' }}></span>
+                    {Array.from({ length: 8 }).map((_, i) => {
+                      // Same random pastel generation used for the project tech tags
+                      let hue = Math.floor(Math.random() * 360) - 20;
+                      if (hue < 0) hue += 360;
+                      const pastelColor = `hsl(${hue}, 70%, 85%)`;
+                      return <span key={i} style={{ background: pastelColor }}></span>;
+                    })}
                   </div>
                 </div>
               </div>
