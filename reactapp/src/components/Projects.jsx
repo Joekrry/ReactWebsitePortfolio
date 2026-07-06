@@ -53,6 +53,11 @@ const Projects = () => {
 
   const miniProjects = [
     {
+      title: "minimaFetch",
+      technologies: ["Shell", "Arch Linux"],
+      githubUrl: "https://github.com/Joekrry/minimaFetch"
+    },
+    {
       title: "GeometryWars2D",
       technologies: ["C#", "Xna Framework", "Monogame"],
       githubUrl: "https://github.com/Joekrry/Geometry-Wars-2D-Remake-in-Xna"
