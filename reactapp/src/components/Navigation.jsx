@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import './Navigation.css';
 
-const Navigation = () => 
+const Navigation = () =>
     {
+  const navRef = useRef(null);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
@@ -28,6 +29,21 @@ const Navigation = () =>
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  
+  useEffect(() => {
+    const navEl = navRef.current;
+    if (!navEl) return;
+
+    const updateNavHeight = () => {
+      document.documentElement.style.setProperty('--nav-height', `${navEl.getBoundingClientRect().height}px`);
+    };
+
+    updateNavHeight();
+
+    const resizeObserver = new ResizeObserver(updateNavHeight);
+    resizeObserver.observe(navEl);
+    return () => resizeObserver.disconnect();
+  }, []);
 
   const navItems = 
   [
@@ -50,7 +66,7 @@ const Navigation = () =>
   };
 
   return (
-    <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
+    <nav ref={navRef} className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
       <div className="nav-container">
         <div className="nav-left">
           <div className="social-links">

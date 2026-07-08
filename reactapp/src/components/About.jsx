@@ -6,16 +6,16 @@ const About = () =>
   const [isSoftwareOpen, setIsSoftwareOpen] = useState(false);
   const [isLawOpen, setIsLawOpen] = useState(false);
   const aboutRef = useRef(null);
+  const hasInteractedRef = useRef(false);
 
   const softwareModules = 
   [
     { name: "Advanced Software Development (High-Distinction)", grade: "high-distinction" },
-    { name: "System Analysis and Design (High-Commendation)", grade: "high-commendation" },
-    { name: "Software Project Management (Low-Distinction)", grade: "low-distinction" },
-    { name: "Mobile Systems (Mid-Commendation) :/", grade: "mid-commendation" },
-    { name: "Research Methods (Mid-Distinction)", grade: "mid-distinction" },
     { name: "Software Design and Development (Mid-Distinction)", grade: "mid-distinction" },
-    { name: "Final Major Project", grade: "" }
+    { name: "Software Project Management (Low-Distinction)", grade: "low-distinction" },
+    { name: "Research Methods (Mid-Distinction)", grade: "mid-distinction" },
+    { name: "System Analysis and Design (High-Commendation)", grade: "high-commendation" },
+    { name: "Mobile Systems (Mid-Commendation) :/", grade: "mid-commendation" },
   ];
 
   const lawModules = 
@@ -49,8 +49,12 @@ const About = () =>
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
+          if (hasInteractedRef.current) return;
           if (entry.isIntersecting) {
-            setIsSoftwareOpen(true);
+            const isMobile = window.matchMedia('(max-width: 768px)').matches;
+            if (!isMobile) {
+              setIsSoftwareOpen(true);
+            }
           } else {
             setIsSoftwareOpen(false);
             setIsLawOpen(false);
@@ -105,7 +109,10 @@ const About = () =>
               <div className="dropdown-container">
                 <button 
                   className={`dropdown-toggle ${isSoftwareOpen ? 'active' : ''}`}
-                  onClick={() => setIsSoftwareOpen(!isSoftwareOpen)}
+                  onClick={() => {
+                    hasInteractedRef.current = true;
+                    setIsSoftwareOpen(!isSoftwareOpen);
+                  }}
                 >
                   <span>MSc Software Engineering Modules</span>
                   <svg className={`chevron ${isSoftwareOpen ? 'rotated' : ''}`} width="16" height="16" viewBox="0 0 16 16">
@@ -129,7 +136,10 @@ const About = () =>
               <div className="dropdown-container">
                 <button 
                   className={`dropdown-toggle ${isLawOpen ? 'active' : ''}`}
-                  onClick={() => setIsLawOpen(!isLawOpen)}
+                  onClick={() => {
+                    hasInteractedRef.current = true;
+                    setIsLawOpen(!isLawOpen);
+                  }}
                 >
                   <span>LLB Hons Law with Business Modules</span>
                   <svg className={`chevron ${isLawOpen ? 'rotated' : ''}`} width="16" height="16" viewBox="0 0 16 16">

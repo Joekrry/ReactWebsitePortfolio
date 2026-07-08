@@ -54,7 +54,29 @@
   --z-modal: 500;
   --z-popover: 600;
   --z-tooltip: 700;
-  --z-notification: 800;  
+  --z-notification: 800;
+
+  --nav-height: 70px;
+
+  --project-card-width: calc((min(100vw, 2000px) - 4rem - 7.5rem) / 3 + 1.5rem);
+}
+
+@media (max-width: 1024px)
+{
+  :root
+  {
+    --nav-height: 110px;
+    --project-card-width: calc((100vw - 4rem - 4.5rem) / 2 + 1.5rem);
+  }
+}
+
+@media (max-width: 768px)
+{
+  :root
+  {
+    --nav-height: 110px;
+    --project-card-width: calc(100vw - 2rem);
+  }
 }
 
 * 
