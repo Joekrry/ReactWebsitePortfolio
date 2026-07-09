@@ -4,9 +4,9 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: "Benchmarking CNN, Hybrid and Transformer Architectures for EEG Motor Imagery Classification on OpenBCI's Galea Headset using Standardised Preprocessing Pipelines",
+      title: "Masters Dissertation Thesis",
       source: "Dissertation",
-      subtitle: "<!!! MORE INFO TO COME !!!>",
+      subtitle: "Benchmarking Deep Learning Architectures for EEG Motor Imagery Classification on the Galea Headset using Standardised Preprocessing Pipelines",
       description: "The aim of this paper is to find out what extent of reported accuracy differences between modern deep learning architectures for EEG motor imagery classification are attributable to preprocessing pipeline choices rather than architectural advances. Also, whether architectural differences persist from pipeline to pipeline, and whether different evaluation methods (LOSO and subject-specific) change the preceding answers.",
       technologies: ["Python 3.12+", "Pytorch", "MNE-Python", "EEGNet", "EEGConformer", "Matplotlib", "Seaborn", "Jupyter Notebooks"],
       githubUrl: "",
@@ -52,7 +52,7 @@ const Projects = () => {
     {
       id: 6,
       title: "CoverLetterGenerator",
-      source: "open source",
+      source: "archived",
       subtitle: "AI-powered cover letter tool.",
       description: "A web application that generates tailored cover letters using AI, based on user inputted job descriptions and personal details. Built with a React frontend and GoLang backend, integrating OpenAI's API for content generation. The app features a user-friendly interface for inputting job and personal information, and provides options to download the generated cover letter in various formats. Postman was used for API testing and development. This project is for personal use only and is not intended for commercial distribution.",
       technologies: ["JavaScript", "React", "GoLang", "OpenAI API", "Postman"],
