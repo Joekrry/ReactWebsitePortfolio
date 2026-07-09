@@ -3,7 +3,7 @@ import './Projects.css';
 const Projects = () => {
   const projects = [
     {
-      id: 101,
+      id: 1,
       title: "Benchmarking CNN, Hybrid and Transformer Architectures for EEG Motor Imagery Classification on OpenBCI's Galea Headset using Standardised Preprocessing Pipelines",
       source: "Dissertation",
       subtitle: "<!!! MORE INFO TO COME !!!>",
@@ -13,7 +13,7 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 6,
+      id: 2,
       title: "Convolutional Vision Transformer - Temporal Convolutional Network (CvT-TCN) for EEG Motor Imagery Classification",
       source: "open source",
       subtitle: "Independent CvT-TCN experiment for EEG motor imagery classification.",
@@ -25,23 +25,32 @@ const Projects = () => {
     {
       id: -1,
       title: "ParticlePipe",
-      source: "in-development",
+      source: "open source",
       subtitle: "High-energy-physics data pipeline and analysis platform (LHC Run 3 simulation).",
       description: "A from-scratch Python platform that simulates and reconstructs LHC-style particle-collision events, with every physics algorithm implemented by hand — no ROOT, Pythia, or even NumPy. The domain core is built on relativistic Lorentz 4-vectors and a particle database. A reproducible Monte Carlo generator samples realistic events from a private seeded RNG: power-law pT spectra, Breit-Wigner resonance lineshapes, and isotropic two-body decays boosted from the parent rest frame into the lab, producing Z→μμ/ee, J/ψ→μμ, H→γγ, soft-QCD minimum-bias and pileup, all smeared over a realistic beam vertex. A three-level asynchronous trigger then reconstructs the physics: L1 applies fast pT/ET/MET threshold cuts, L2 computes ΔR-cone lepton isolation and dimuon-mass tags, and L3 runs a simplified Kalman track fit and rebuilds resonances from opposite-sign pairs — with L2/L3 offloaded to an executor under a bounded-concurrency semaphore. The analysis engine fills hand-rolled histograms (with Σw² Poisson errors) and fits Gaussian-on-quadratic-background peaks via χ²-minimising gradient descent, extracting signal yield and S/√(S+B) significance and recovering the Z⁰ peak near 91.19 GeV and the J/ψ near 3.097 GeV. The same core is exposed through a CLI runner and an async FastAPI REST service with Server-Sent Events streaming, all backed by a 36-test suite and an installable, configurable package.",
       technologies: ["Python 3.11+", "FastAPI", "Uvicorn", "Pydantic", "asyncio", "aiosqlite", "pytest"],
-      githubUrl: ""
+      githubUrl: "https://github.com/Joekrry/particlepipe",
     },
     {
-      id: 1,
+      id: 4,
+      title: "vimline-errors",
+      source: "open source",
+      subtitle: "An open source inline error diagnostic tool for native Vim 9.0+",
+      description: "Most plugins require a linter or language server per language to identify errors. This tool is self contained, meaning it runs on the languages compiler/ interpreter in check only mode. It catches errors with support for Python, C, Cpp, JavaScript, bash, perl, and lua. Adding support for new languages is a matter of altering the config file, so it can be altered without me having to do major commits.",
+      technologies: ["Vim Script 9.0+", "Compilers", "Interpreters", "+textprop", "ale"],
+      githubUrl: "https://github.com/Joekrry/vimline-errors",
+    },
+    {
+      id: 5,
       title: "Cloud Load Balancer",
-      source: "in-development",
+      source: "open source",
       subtitle: "Implementation and Validation of a distributred cloud load balancer with encrypted file storage.",
       description: "A Java-based distributed cloud infrastructure simulator that manages file storage across multiple Docker containers via an intelligent load balancer. Users interact with the system through a JavaFX GUI to upload, download, share, and manage files. Files are encrypted, chunked, and distributed across four file-server containers. A load balancer employs scheduling algorithms (FCFS, Round Robin, Priority Scheduling) to distribute requests, while an MQTT-based host manager dynamically scales containers based on demand. The system uses dual databases — a local SQLite instance for offline resilience and a remote MySQL container for centralised storage — with synchronisation and conflict resolution between them. A Jenkins CI/CD pipeline and a self-hosted Git server round out the infrastructure.",
       technologies: ["Java20+", "JavaFX", "Apache Maven", "Docker", "Eclipse Mosquitto (MQTT)", "SQLite", "MySQL8", "Jenkins"],
       githubUrl: "https://github.com/Joekrry/DistributedCloudLoadBalancer"
     },
     {
-      id: 3,
+      id: 6,
       title: "CoverLetterGenerator",
       source: "open source",
       subtitle: "AI-powered cover letter tool.",
