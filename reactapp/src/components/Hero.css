@@ -316,6 +316,18 @@
   to { transform: rotate(360deg); }
 }
 
+/* On non-mobile the page is zoomed by --zoom-desktop, so a plain 100vh renders
+   at only that fraction of the screen and the next section peeks in. Scale the
+   hero up so it still fills exactly one screen after the zoom, keeping work
+   experience off the initial landing view. */
+@media (min-width: 769px)
+{
+  .hero
+  {
+    min-height: calc(100vh / var(--zoom-desktop));
+  }
+}
+
 @media (max-width: 768px)
 {
   .hero-container

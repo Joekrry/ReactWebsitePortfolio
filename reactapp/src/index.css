@@ -59,6 +59,11 @@
   --nav-height: 70px;
 
   --project-card-width: calc((min(100vw, 2000px) - 4rem - 7.5rem) / 3 + 1.5rem);
+
+  /* Page zoom configs — change the value here to adjust everywhere at once.
+     --zoom-desktop applies on non-mobile widths; --zoom-mobile keeps mobile 1:1. */
+  --zoom-desktop: 0.8;
+  --zoom-mobile: 1;
 }
 
 @media (max-width: 1024px)
@@ -84,13 +89,24 @@
   box-sizing: border-box;
 }
 
-html 
+html
 {
+  /* Mobile keeps its 1:1 layout (--zoom-mobile). */
+  zoom: var(--zoom-mobile);
   font-size: 16px;
   scroll-behavior: smooth;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Non-mobile widths render at --zoom-desktop (default 0.8). */
+@media (min-width: 769px)
+{
+  html
+  {
+    zoom: var(--zoom-desktop);
+  }
 }
 
 body 
