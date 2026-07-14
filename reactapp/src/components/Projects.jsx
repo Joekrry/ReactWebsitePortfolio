@@ -9,7 +9,7 @@ const Projects = () => {
       subtitle: "Benchmarking Deep Learning Architectures for EEG Motor Imagery Classification on the Galea Headset using Standardised Preprocessing Pipelines",
       description: "The aim of this paper is to find out what extent of reported accuracy differences between modern deep learning architectures for EEG motor imagery classification are attributable to preprocessing pipeline choices rather than architectural advances. Also, whether architectural differences persist from pipeline to pipeline, and whether different evaluation methods (LOSO and subject-specific) change the preceding answers.",
       technologies: ["Python 3.12+", "Pytorch", "MNE-Python", "EEGNet", "EEGConformer", "Matplotlib", "Seaborn", "Jupyter Notebooks"],
-      githubUrl: "",
+      githubUrl: null,
       featured: true
     },
     {
@@ -23,7 +23,7 @@ const Projects = () => {
       featured: true
     },
     {
-      id: -1,
+      id: 3,
       title: "ParticlePipe",
       source: "open source",
       subtitle: "High-energy-physics data pipeline and analysis platform (LHC Run 3 simulation).",
@@ -33,6 +33,15 @@ const Projects = () => {
     },
     {
       id: 4,
+      title: "mllhep",
+      source: "open source",
+      subtitle: "Machine Learning Library for High Energy Physics built in C",
+      description: "A classical machine and deep learning library built in C with the purpose of being applied to my 'particlepipe' project. particlepipe generated fully labelled events and reconstructs them into machine readable results, the aim of this library is to provide me with a deeper understanding of the code equivalent of these complex machine and deep learning algorithms and to apply to particlepipe as an analysis layer in real time. High energy physics triggers operate with tight latency budgets which is exactly why a native C implementation with custom arena memory allocation delivers low and predictable inference time needed to run the model. NOT that it would ever make it past a personal project because I am one man however when I get to work on production projects, these concerns become prevalent.",
+      technologies: ["C", "Arena memory allocator", "GCC", "Makefile", ""],
+      githubUrl: "https://github.com/Joekrry/mllhep",
+    },
+    {
+      id: 5,
       title: "vimline-errors",
       source: "open source",
       subtitle: "An open source inline error diagnostic tool for native Vim 9.0+",
@@ -41,22 +50,13 @@ const Projects = () => {
       githubUrl: "https://github.com/Joekrry/vimline-errors",
     },
     {
-      id: 5,
+      id: 6,
       title: "Cloud Load Balancer",
       source: "open source",
       subtitle: "Implementation and Validation of a distributred cloud load balancer with encrypted file storage.",
       description: "A Java-based distributed cloud infrastructure simulator that manages file storage across multiple Docker containers via an intelligent load balancer. Users interact with the system through a JavaFX GUI to upload, download, share, and manage files. Files are encrypted, chunked, and distributed across four file-server containers. A load balancer employs scheduling algorithms (FCFS, Round Robin, Priority Scheduling) to distribute requests, while an MQTT-based host manager dynamically scales containers based on demand. The system uses dual databases — a local SQLite instance for offline resilience and a remote MySQL container for centralised storage — with synchronisation and conflict resolution between them. A Jenkins CI/CD pipeline and a self-hosted Git server round out the infrastructure.",
       technologies: ["Java20+", "JavaFX", "Apache Maven", "Docker", "Eclipse Mosquitto (MQTT)", "SQLite", "MySQL8", "Jenkins"],
       githubUrl: "https://github.com/Joekrry/DistributedCloudLoadBalancer"
-    },
-    {
-      id: 6,
-      title: "CoverLetterGenerator",
-      source: "archived",
-      subtitle: "AI-powered cover letter tool.",
-      description: "A web application that generates tailored cover letters using AI, based on user inputted job descriptions and personal details. Built with a React frontend and GoLang backend, integrating OpenAI's API for content generation. The app features a user-friendly interface for inputting job and personal information, and provides options to download the generated cover letter in various formats. Postman was used for API testing and development. This project is for personal use only and is not intended for commercial distribution.",
-      technologies: ["JavaScript", "React", "GoLang", "OpenAI API", "Postman"],
-      githubUrl: "https://github.com/Joekrry/CoverLetterGenerator"
     },
   ];
 
@@ -80,6 +80,11 @@ const Projects = () => {
       title: "MrMandelbrot",
       technologies: ["C", "SDL2"],
       githubUrl: "https://github.com/Joekrry/MrMandelbrot"
+    },
+    {
+      title: "CoverLetterGenerator",
+      technologies: ["JavaScript", "React", "GoLang", "OpenAI API", "Postman"],
+      githubUrl: "https://github.com/Joekrry/CoverLetterGenerator"
     },
   ];
 
@@ -155,15 +160,25 @@ const Projects = () => {
                       );
                     })}
                   </div>
-                  <a
-                    href={project.githubUrl}
-                    className="action-btn github-btn"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={`View ${project.title} on GitHub`}
-                  >
-                    <i className="fab fa-github"></i>
-                  </a>
+                  {project.githubUrl ? (
+                    <a
+                      href={project.githubUrl}
+                      className="action-btn github-btn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label={`View ${project.title} on GitHub`}
+                    >
+                      <i className="fab fa-github"></i>
+                    </a>
+                  ) : (
+                    <span
+                      className="action-btn github-btn github-btn-disabled"
+                      aria-disabled="true"
+                      aria-label={`${project.title} — no repository available`}
+                    >
+                      <i className="fab fa-github"></i>
+                    </span>
+                  )}
                 </div>
               </div>
             ))}

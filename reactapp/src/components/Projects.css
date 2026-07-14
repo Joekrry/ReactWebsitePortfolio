@@ -259,9 +259,21 @@
   align-self: flex-start;
 }
 
+/* GitHub buttons match the project title colour */
+.github-btn {
+  color: #faf8f6;
+}
+
 .github-btn:hover {
   color: #faf8f6;
   transform: scale(1.15);
+}
+
+/* Nullified (no repo) — keep the muted colour and make it unclickable */
+.github-btn-disabled {
+  color: #78716c;
+  cursor: default;
+  pointer-events: none;
 }
 
 /* ── Smaller projects card (list of mini projects) ── */
