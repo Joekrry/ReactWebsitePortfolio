@@ -37,7 +37,7 @@ const Projects = () => {
       source: "open source",
       subtitle: "Machine Learning Library for High Energy Physics built in C",
       description: "A classical machine and deep learning library built in C with the purpose of being applied to my 'particlepipe' project. particlepipe generated fully labelled events and reconstructs them into machine readable results, the aim of this library is to provide me with a deeper understanding of the code equivalent of these complex machine and deep learning algorithms and to apply to particlepipe as an analysis layer in real time. High energy physics triggers operate with tight latency budgets which is exactly why a native C implementation with custom arena memory allocation delivers low and predictable inference time needed to run the model. NOT that it would ever make it past a personal project because I am one man however when I get to work on production projects, these concerns become prevalent.",
-      technologies: ["C", "Arena memory allocator", "GCC", "Makefile", ""],
+      technologies: ["C", "Arena memory allocator", "GCC", "Makefile"],
       githubUrl: "https://github.com/Joekrry/mllhep",
     },
     {
