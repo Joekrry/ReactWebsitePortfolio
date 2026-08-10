@@ -58,7 +58,7 @@ const Hero = () => {
                   <div className="arch-info-row"><span className="arch-key" style={{ color: accentColor }}>OS</span>Arch Linux x86_64</div>
                   <div className="arch-info-row"><span className="arch-key" style={{ color: accentColor }}>Host</span>Joseph Kerry</div>
                   <div className="arch-info-row"><span className="arch-key" style={{ color: accentColor }}>Kernel</span>MSc Software Engineering</div>
-                  <div className="arch-info-row"><span className="arch-key" style={{ color: accentColor }}>Packages</span>C#, Python, Java, C</div>
+                  <div className="arch-info-row"><span className="arch-key" style={{ color: accentColor }}>Packages</span>Python, C#, Java, C</div>
                   <div className="arch-info-row"><span className="arch-key" style={{ color: accentColor }}>ModulesGrade</span>Low Distinction</div>
                   <div className="arch-info-colors">
                     {Array.from({ length: 8 }).map((_, i) => {

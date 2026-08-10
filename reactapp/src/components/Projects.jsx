@@ -6,7 +6,7 @@ const Projects = () => {
       id: 1,
       title: "Masters Dissertation Thesis",
       source: "Dissertation",
-      subtitle: "Benchmarking Deep Learning Architectures for EEG Motor Imagery Classification on the Galea Headset using Standardised Preprocessing Pipelines",
+      subtitle: "Assessing the Galea Headset on a Benchmark of Deep Learning Architectures and Pre-processing Pipelines for EEG Motor-Imagery Task Classification",
       description: "The aim of this paper is to find out what extent of reported accuracy differences between modern deep learning architectures for EEG motor imagery classification are attributable to preprocessing pipeline choices rather than architectural advances. Also, whether architectural differences persist from pipeline to pipeline, and whether different evaluation methods (LOSO and subject-specific) change the preceding answers.",
       technologies: ["Python 3.12+", "Pytorch", "MNE-Python", "EEGNet", "EEGConformer", "Matplotlib", "Seaborn", "Jupyter Notebooks"],
       githubUrl: null,
@@ -18,7 +18,7 @@ const Projects = () => {
       source: "open source",
       subtitle: "Independent CvT-TCN experiment for EEG motor imagery classification.",
       description: "Implemented a CvT using PyTorch for motor imagery classification (not for major project) on the EEGMMIDB dataset, converting raw time trials into time-frequency representations. Achieved a subject-independent accuracy on 4-class motor imagery, achieving similar results to EEGNet with an end-to-end pipeline. Visualised attention maps and convolutional filter activations to identify which EEG channel frequency bands drove predictions; findings were consistent with motor imagery neurophysiology.",
-      technologies: ["Python", "PyTorch", "EEGMMIDB", "EEGNet", "Matplotlib", "Jupyter Notebooks"],
+      technologies: ["Python", "PyTorch", "EEGMMIDB", "Matplotlib", "Jupyter Notebooks"],
       githubUrl: "https://github.com/Joekrry/CVTTCN",
       featured: true
     },

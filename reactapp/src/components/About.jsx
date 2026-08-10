@@ -10,12 +10,12 @@ const About = () =>
 
   const softwareModules = 
   [
-    { name: "Advanced Software Development (High-Distinction)", grade: "high-distinction" },
-    { name: "Software Design and Development (Mid-Distinction)", grade: "mid-distinction" },
-    { name: "Software Project Management (Low-Distinction)", grade: "low-distinction" },
-    { name: "Research Methods (Mid-Distinction)", grade: "mid-distinction" },
-    { name: "System Analysis and Design (High-Commendation) :/", grade: "high-commendation" },
-    { name: "Mobile Systems (Mid-Commendation) :/", grade: "mid-commendation" },
+    { name: "Advanced Software Development", grade: "" },
+    { name: "Software Design and Development", grade: "" },
+    { name: "Software Project Management", grade: "" },
+    { name: "Research Methods", grade: "" },
+    { name: "System Analysis and Design", grade: "" },
+    { name: "Mobile Systems", grade: "" },
   ];
 
   const lawModules = 
