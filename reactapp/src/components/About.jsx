@@ -99,8 +99,7 @@ const About = () =>
             </p>
 
             <p className ="about-text">
-              As of April 2026, I am starting my dissertation project which involves a software project plan, a literature review and a dissertation paper
-              alongside the development of my dissertation project.
+              As of september 2026, I have completed my MSc degree, I will be consolidating my skills with respect to my desired field while I search for a job.
             </p>
           </div>
 

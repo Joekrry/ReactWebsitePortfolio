@@ -7,8 +7,8 @@ const Projects = () => {
       title: "Masters Dissertation Thesis",
       source: "Dissertation",
       subtitle: "Assessing the Galea Headset on a Benchmark of Deep Learning Architectures and Pre-processing Pipelines for EEG Motor-Imagery Task Classification",
-      description: "The aim of this paper is to find out what extent of reported accuracy differences between modern deep learning architectures for EEG motor imagery classification are attributable to preprocessing pipeline choices rather than architectural advances. Also, whether architectural differences persist from pipeline to pipeline, and whether different evaluation methods (LOSO and subject-specific) change the preceding answers.",
-      technologies: ["Python 3.12+", "Pytorch", "MNE-Python", "EEGNet", "EEGConformer", "Matplotlib", "Seaborn", "Jupyter Notebooks"],
+      description: "Motor imagery BCI's decode imagined movement from electroencephalography, despite this most published classifiers are evaluated on dense research grade montages under conditions that do not typically transfer to consumer hardware. This dissertation aims to benchmark three architectures: EEGNet, EEG-Conformer and the novel GRFNet (Galea ROCKET-Fusion Network), primarily on the sparse four channel montage of the OpenBCI Galea headset, but also the native dataset channels, under a controlled, leakage safe evaluation framework. A controlled experimental grid crosses three architectures with four preprocessing pipelines across five seeds. Using subject specific evaluation on BCI competition IV 2a and 2b with 180 cells overall. Backing this up is non parametric statistical testing utilising Holm-Bonferroni correction, confidence intervals and rank-biserial effect sizes. A cross subject-hardware transfer study tests all trained models and preprocessing pipelines on three participants recorded with the Galea headset. On the sparse montage, EEGNet leads with 0.599 on four class accuracy, while GRFNet matches EEG-Conformer at 0.566 (GRFNet containing 3655 parameters against Conformers 789,572). Heavier preprocessing displays an advantage on IV-2a whereas lighter preprocessing helps IV-2b. Restricting from 22 channels to four costs 0.099 accuracy, which presents as significant in nine of twelve cells, performance still remains above chance despite this. Cross subject-hardware transfer to galea presents chance level accuracy across every single cell - signal quality diagnostics trace this to electrode placement, material and conductivity. The key contribution establishes that dry electrode pillars on the Galea headset impose a signal quality issue based on inadequate electrode contact, conductivity and high impedance. The benchmark further demonstrates another finding that under controlled standardised conditions across preprocessing pipelines, compact decoders are able to match or exceed transformer scale models which supports the hypothesis of parameter efficient designs as the most practical path for resource constrained environments.",
+      technologies: ["Python 3.11+", "PyTorch", "MNE-Python", "EEGNet", "EEG-Conformer", "GRFNet (novel)", "NumPy", "SciPy", "Scikit-learn"],
       githubUrl: null,
       featured: true
     },
@@ -41,15 +41,6 @@ const Projects = () => {
       githubUrl: "https://github.com/Joekrry/mllhep",
     },
     {
-      id: 5,
-      title: "vimline-errors",
-      source: "open source",
-      subtitle: "An open source inline error diagnostic tool for native Vim 9.0+",
-      description: "Most plugins require a linter or language server per language to identify errors. This tool is self contained, meaning it runs on the languages compiler/ interpreter in check only mode. It catches errors with support for Python, C, Cpp, JavaScript, bash, perl, and lua. Adding support for new languages is a matter of altering the config file, so it can be altered without me having to do major commits.",
-      technologies: ["Vim Script 9.0+", "Compilers", "Interpreters", "+textprop", "ale"],
-      githubUrl: "https://github.com/Joekrry/vimline-errors",
-    },
-    {
       id: 6,
       title: "Cloud Load Balancer",
       source: "open source",
@@ -58,6 +49,15 @@ const Projects = () => {
       technologies: ["Java20+", "JavaFX", "Apache Maven", "Docker", "Eclipse Mosquitto (MQTT)", "SQLite", "MySQL8", "Jenkins"],
       githubUrl: "https://github.com/Joekrry/DistributedCloudLoadBalancer"
     },
+    {
+      id: 5,
+      title: "vimline-errors",
+      source: "open source",
+      subtitle: "An open source inline error diagnostic tool for native Vim 9.0+",
+      description: "Most plugins require a linter or language server per language to identify errors. This tool is self contained, meaning it runs on the languages compiler/ interpreter in check only mode. It catches errors with support for Python, C, Cpp, JavaScript, bash, perl, and lua. Adding support for new languages is a matter of altering the config file, so it can be altered without me having to do major commits.",
+      technologies: ["Vim Script 9.0+", "Compilers", "Interpreters", "+textprop", "ale"],
+      githubUrl: "https://github.com/Joekrry/vimline-errors",
+    }
   ];
 
   const miniProjects = [
